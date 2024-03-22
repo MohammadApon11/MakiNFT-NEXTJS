@@ -33,10 +33,7 @@ const PicksHome2 = () => {
   const [isOpenThree, setIsOpenThree] = useState(false);
   const [isOpenFour, setIsOpenFour] = useState(false);
 
-  
-
-
-  // 
+  //
   const handleItemOne = (text) => {
     setBtnTextOne(text);
     setIsOpenOne(false);
@@ -78,19 +75,19 @@ const PicksHome2 = () => {
       setIsOpenTwo(false);
       setIsOpenThree(false);
       setIsOpenFour(false);
-      setIsOpenPrice(false)
+      setIsOpenPrice(false);
     }
   };
   useEffect(() => {
-    window.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener("mousedown", handleClickOutside);
     return () => {
-      window.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   return (
     <section className={picksStyles.picks_card_container}>
-      <SectionSubTitleAndTitle title="Today's Picks" subTitle="PICKS" />
+      <SectionSubTitleAndTitle title="Today&apos;s Picks" subTitle="PICKS" />
       <div ref={dropdownRef} className={picksStyles.card_btn_group_header}>
         <div className={picksStyles.filtering_btn_group}>
           <div className={picksStyles.custom_dropdown_1}>
@@ -133,10 +130,19 @@ const PicksHome2 = () => {
               />
               Price Range
             </button>
-            <div className={`${picksStyles.dropdown_menu_2} ${
+            <div
+              className={`${picksStyles.dropdown_menu_2} ${
                 isOpenPrice ? "block" : "hidden"
-              }`}>
-              <input className={picksStyles.price_range_input} type="range" min={40} max={1000} value={price} onInput={handleInput} />
+              }`}
+            >
+              <input
+                className={picksStyles.price_range_input}
+                type="range"
+                min={40}
+                max={1000}
+                value={price}
+                onInput={handleInput}
+              />
               <h1 className={picksStyles.price_text}>Price: {price}</h1>
             </div>
           </div>
@@ -228,9 +234,7 @@ const PicksHome2 = () => {
               : btnText1 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 100
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 100 ? "block" : "hidden"}`}
         >
           <div className={picksStyles.card_content}>
             <div className={picksStyles.card_image_container}>
@@ -341,9 +345,7 @@ const PicksHome2 = () => {
               : btnText2 === "Consultative"
               ? "block"
               : "hidden"
-          } ${price <= 200
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 200 ? "block" : "hidden"}`}
         >
           <div className={picksStyles.card_content}>
             <div className={picksStyles.card_image_container}>
@@ -456,9 +458,7 @@ const PicksHome2 = () => {
               : btnText3 === "Bitcoin"
               ? "block"
               : "hidden"
-          } ${price <= 300
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 300 ? "block" : "hidden"}`}
         >
           <div className={picksStyles.card_content}>
             <div className={picksStyles.card_image_container}>
@@ -571,9 +571,7 @@ const PicksHome2 = () => {
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 400
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 400 ? "block" : "hidden"}`}
         >
           <div className={picksStyles.card_content}>
             <div className={picksStyles.card_image_container}>
@@ -686,9 +684,7 @@ const PicksHome2 = () => {
               : btnText1 === "Last-Week"
               ? "block"
               : "hidden"
-          } ${price <= 500
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 500 ? "block" : "hidden"}`}
         >
           <div className={picksStyles.card_content}>
             <div className={picksStyles.card_image_container}>
@@ -801,9 +797,7 @@ const PicksHome2 = () => {
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={picksStyles.card_content}>
             <div className={picksStyles.card_image_container}>
@@ -916,9 +910,7 @@ const PicksHome2 = () => {
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={picksStyles.card_content}>
             <div className={picksStyles.card_image_container}>
@@ -1031,9 +1023,7 @@ const PicksHome2 = () => {
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={picksStyles.card_content}>
             <div className={picksStyles.card_image_container}>
@@ -1138,4 +1128,3 @@ const PicksHome2 = () => {
 };
 
 export default PicksHome2;
-

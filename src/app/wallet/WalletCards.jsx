@@ -20,7 +20,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Edge Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -37,7 +37,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Bread Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -54,7 +54,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Trustee Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -71,7 +71,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Zumo Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -88,7 +88,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Guarda Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -105,7 +105,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Unstoppable Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -122,7 +122,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>CRYPTX Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -139,7 +139,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Nuri Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -156,7 +156,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Trezor Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -173,7 +173,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>OWRN Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -190,7 +190,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Spectorcoin Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -207,7 +207,7 @@ const WalletCards = () => {
           />
           <h3 className={walletCardsStyles.wallet_title}>Xapo Wallet</h3>
           <p className={walletCardsStyles.wallet_description}>
-            Extension if the an it less doctor's your consider at to where avoid
+            Extension if the an it less doctor&apos;s your consider at to where avoid
             that attributing write you.
           </p>
           <button className={walletCardsStyles.wallet_btn}>
@@ -215,7 +215,11 @@ const WalletCards = () => {
           </button>
         </div>
       </div>
-      <LoadMoreBtn loadMore={loadMore} setLoadMore={setLoadMore} title={"wallet"} />
+      <LoadMoreBtn
+        loadMore={loadMore}
+        setLoadMore={setLoadMore}
+        title={"wallet"}
+      />
     </section>
   );
 };

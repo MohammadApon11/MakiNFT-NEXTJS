@@ -33,10 +33,7 @@ const ExploreArtworkV2 = () => {
   const [isOpenThree, setIsOpenThree] = useState(false);
   const [isOpenFour, setIsOpenFour] = useState(false);
 
-  
-
-
-  // 
+  //
   const handleItemOne = (text) => {
     setBtnTextOne(text);
     setIsOpenOne(false);
@@ -78,18 +75,18 @@ const ExploreArtworkV2 = () => {
       setIsOpenTwo(false);
       setIsOpenThree(false);
       setIsOpenFour(false);
-      setIsOpenPrice(false)
+      setIsOpenPrice(false);
     }
   };
   useEffect(() => {
-    window.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener("mousedown", handleClickOutside);
     return () => {
-      window.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
-//   pagination work
-const [currentPage, setCurrentPage] = useState(1);
+  //   pagination work
+  const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 7;
   const itemsPerPage = 4;
 
@@ -168,10 +165,19 @@ const [currentPage, setCurrentPage] = useState(1);
               />
               Price Range
             </button>
-            <div className={`${liveStyles.dropdown_menu_2} ${
+            <div
+              className={`${liveStyles.dropdown_menu_2} ${
                 isOpenPrice ? "block" : "hidden"
-              }`}>
-              <input className={liveStyles.price_range_input} type="range" min={40} max={1000} value={price} onInput={handleInput} />
+              }`}
+            >
+              <input
+                className={liveStyles.price_range_input}
+                type="range"
+                min={40}
+                max={1000}
+                value={price}
+                onInput={handleInput}
+              />
               <h1 className={liveStyles.price_text}>Price: {price}</h1>
             </div>
           </div>
@@ -263,9 +269,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText1 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 100
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 100 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -376,9 +380,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Consultative"
               ? "block"
               : "hidden"
-          } ${price <= 200
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 200 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -491,9 +493,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Bitcoin"
               ? "block"
               : "hidden"
-          } ${price <= 300
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 300 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -606,9 +606,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 400
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 400 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -721,9 +719,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText1 === "Last-Week"
               ? "block"
               : "hidden"
-          } ${price <= 500
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 500 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -836,9 +832,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -951,9 +945,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1066,9 +1058,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1179,9 +1169,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText1 === "Last-Week"
               ? "block"
               : "hidden"
-          } ${price <= 500
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 500 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1283,7 +1271,9 @@ const [currentPage, setCurrentPage] = useState(1);
         </div>
         {/* 1 */}
         <div
-          className={`${currentPage === 1 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 1 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText2 === "all"
               ? "block"
               : btnText2 === "Creative"
@@ -1295,9 +1285,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1398,7 +1386,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 1 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 1 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText3 === "all"
               ? "block"
               : btnText3 === "Creative"
@@ -1410,9 +1400,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1513,7 +1501,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 1 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 1 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText4 === "all"
               ? "block"
               : btnText4 === "Creative"
@@ -1525,9 +1515,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1627,7 +1615,9 @@ const [currentPage, setCurrentPage] = useState(1);
         </div>
         {/* 2 */}
         <div
-          className={`${currentPage === 2 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 2 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText2 === "all"
               ? "block"
               : btnText2 === "Creative"
@@ -1639,9 +1629,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1742,7 +1730,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 2 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 2 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText3 === "all"
               ? "block"
               : btnText3 === "Creative"
@@ -1754,9 +1744,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1857,7 +1845,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 2 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 2 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText4 === "all"
               ? "block"
               : btnText4 === "Creative"
@@ -1869,9 +1859,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -1971,7 +1959,9 @@ const [currentPage, setCurrentPage] = useState(1);
         </div>
         {/* 3 */}
         <div
-          className={`${currentPage === 3 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 3 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText2 === "all"
               ? "block"
               : btnText2 === "Creative"
@@ -1983,9 +1973,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -2086,7 +2074,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 3 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 3 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText3 === "all"
               ? "block"
               : btnText3 === "Creative"
@@ -2098,9 +2088,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -2201,7 +2189,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 3 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 3 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText4 === "all"
               ? "block"
               : btnText4 === "Creative"
@@ -2213,9 +2203,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -2315,7 +2303,9 @@ const [currentPage, setCurrentPage] = useState(1);
         </div>
         {/* 4 */}
         <div
-          className={`${currentPage === 4 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 4 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText2 === "all"
               ? "block"
               : btnText2 === "Creative"
@@ -2327,9 +2317,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -2430,7 +2418,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 4 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 4 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText3 === "all"
               ? "block"
               : btnText3 === "Creative"
@@ -2442,9 +2432,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -2545,7 +2533,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 4 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 4 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText4 === "all"
               ? "block"
               : btnText4 === "Creative"
@@ -2557,9 +2547,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -2659,7 +2647,9 @@ const [currentPage, setCurrentPage] = useState(1);
         </div>
         {/* 5 */}
         <div
-          className={`${currentPage === 5 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 5 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText2 === "all"
               ? "block"
               : btnText2 === "Creative"
@@ -2671,9 +2661,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -2774,7 +2762,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 5 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 5 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText3 === "all"
               ? "block"
               : btnText3 === "Creative"
@@ -2786,9 +2776,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -2889,7 +2877,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 5 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 5 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText4 === "all"
               ? "block"
               : btnText4 === "Creative"
@@ -2901,9 +2891,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -3003,7 +2991,9 @@ const [currentPage, setCurrentPage] = useState(1);
         </div>
         {/* 6 */}
         <div
-          className={`${currentPage === 6 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 6 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText2 === "all"
               ? "block"
               : btnText2 === "Creative"
@@ -3015,9 +3005,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -3118,7 +3106,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 6 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 6 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText3 === "all"
               ? "block"
               : btnText3 === "Creative"
@@ -3130,9 +3120,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -3233,7 +3221,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 6 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 6 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText4 === "all"
               ? "block"
               : btnText4 === "Creative"
@@ -3245,9 +3235,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -3347,7 +3335,9 @@ const [currentPage, setCurrentPage] = useState(1);
         </div>
         {/* 7 */}
         <div
-          className={`${currentPage === 7 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 7 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText2 === "all"
               ? "block"
               : btnText2 === "Creative"
@@ -3359,9 +3349,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText2 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 600
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 600 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -3462,7 +3450,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 7 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 7 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText3 === "all"
               ? "block"
               : btnText3 === "Creative"
@@ -3474,9 +3464,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText3 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 800
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 800 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -3577,7 +3565,9 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
         <div
-          className={`${currentPage === 7 ? "block" : "hidden"} ${liveStyles.live_card_area} ${
+          className={`${currentPage === 7 ? "block" : "hidden"} ${
+            liveStyles.live_card_area
+          } ${
             btnText4 === "all"
               ? "block"
               : btnText4 === "Creative"
@@ -3589,9 +3579,7 @@ const [currentPage, setCurrentPage] = useState(1);
               : btnText4 === "Earth of Arts"
               ? "block"
               : "hidden"
-          } ${price <= 1000
-            ? "block"
-            :"hidden"}`}
+          } ${price <= 1000 ? "block" : "hidden"}`}
         >
           <div className={liveStyles.card_content}>
             <div className={liveStyles.card_image_container}>
@@ -3690,10 +3678,13 @@ const [currentPage, setCurrentPage] = useState(1);
           </div>
         </div>
       </div>
-      <PaginationBtn goToNextPage={goToNextPage} goToPreviousPage={goToPreviousPage} renderPageNumbers={renderPageNumbers} />
+      <PaginationBtn
+        goToNextPage={goToNextPage}
+        goToPreviousPage={goToPreviousPage}
+        renderPageNumbers={renderPageNumbers}
+      />
     </section>
   );
 };
 
 export default ExploreArtworkV2;
-
