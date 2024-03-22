@@ -1,0 +1,538 @@
+.contact_container {
+  max-width: 1320px;
+  margin: auto;
+}
+.contact_header {
+  color: #ffffff;
+  text-align: center;
+}
+.contact_title {
+  font-size: 56px;
+  font-weight: 700;
+}
+.contact_header p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.contact_card_group {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact_card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 125px 60px 125px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 10px 10px 10px 10px #03030580;
+  color: #ffffff;
+  font-size: 16px;
+  background: #1e1e37;
+  border-radius: 8px;
+}
+.contact_card_title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.contact_card i {
+  font-size: 35px;
+  color: #635eff;
+  margin-bottom: 14px;
+}
+.contact_card p {
+  margin-bottom: 0;
+}
+.contact_card:hover {
+  scale: 1.1;
+  transition: 0.2s ease-in-out;
+}
+.contact_form_and_location {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 25px;
+}
+.contact_form_title {
+  font-size: 35px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.contact_form p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.static_input_group {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.static_input_group input {
+  background: #1e1e37;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  height: 48px;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 16px;
+}
+.static_input_group input::placeholder {
+  color: #ffffff;
+  opacity: 60%;
+}
+.contact_textarea {
+  margin-top: 25px;
+  width: 100%;
+  background: #1e1e37;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact_textarea::placeholder {
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 60%;
+}
+.send_message_btn {
+  padding: 14px 24px;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  background: #1e1e37;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+.send_message_btn:hover {
+  background: #625eff;
+}
+.contact_location {
+  width: 95.2%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+  .contact_container {
+    max-width: 1200px;
+  }
+  .contact_card {
+    padding: 40px 100px 40px 100px;
+  }
+  .contact_location {
+    width: 95.2%;
+  }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .contact_container {
+    max-width: 1000px;
+  }
+  .contact_title {
+    font-size: 40px;
+  }
+  .contact_card_group {
+    margin-top: 50px;
+  }
+  .contact_card {
+    padding: 35px 70px 35px 70px;
+  }
+  .contact_form_and_location {
+    margin-top: 80px;
+  }
+  .contact_location {
+    width: 94%;
+  }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .contact_container {
+    max-width: 900px;
+  }
+  .contact_title {
+    font-size: 40px;
+  }
+  .contact_card_group {
+    margin-top: 45px;
+  }
+  .contact_card {
+    padding: 30px 60px 30px 60px;
+  }
+  .contact_form_and_location {
+    margin-top: 60px;
+  }
+  .contact_form_title {
+    font-size: 30px;
+  }
+  .static_input_group {
+    gap: 15px;
+  }
+  .static_input_group input {
+    height: 40px;
+  }
+  .contact_textarea {
+    margin-top: 15px;
+    height: 150px;
+  }
+  .send_message_btn {
+    padding: 11px 20px;
+    font-size: 13px;
+    margin-top: 13px;
+  }
+  .contact_location {
+    width: 94%;
+  }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .contact_container {
+    max-width: 695px;
+  }
+  .contact_title {
+    font-size: 35px;
+  }
+  .contact_card_group {
+    margin-top: 45px;
+  }
+  .contact_card {
+    padding: 20px 40px 20px 40px;
+    box-shadow: 5px 5px 5px 5px #03030580;
+  }
+  .contact_card_title {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .contact_card p {
+    font-size: 14px;
+  }
+  .contact_card i {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .contact_form_and_location {
+    margin-top: 40px;
+    gap: 15px;
+  }
+  .contact_form_title {
+    font-size: 25px;
+  }
+  .static_input_group {
+    gap: 13px;
+  }
+  .static_input_group input {
+    height: 35px;
+  }
+  .contact_textarea {
+    margin-top: 13px;
+    height: 130px;
+  }
+  .send_message_btn {
+    padding: 10px 17px;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .contact_location {
+    width: 95%;
+  }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+  .contact_container {
+    max-width: 520px;
+  }
+  .contact_title {
+    font-size: 40px;
+  }
+  .contact_card_group {
+    margin-top: 40px;
+  }
+  .contact_description {
+    font-size: 12px;
+  }
+  .contact_card {
+    padding: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px 5px #03030580;
+  }
+  .contact_card_title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .contact_card p {
+    font-size: 12px;
+  }
+  .contact_card i {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+  .contact_form_and_location {
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .contact_form_title {
+    font-size: 20px;
+  }
+  .static_input_group {
+    gap: 10px;
+  }
+  .static_input_group input {
+    height: 30px;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .contact_textarea {
+    margin-top: 12px;
+    height: 130px;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .contact_textarea::placeholder {
+    font-size: 13px;
+  }
+  .send_message_btn {
+    padding: 10px 17px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .contact_location {
+    width: 92%;
+  }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+  .contact_container {
+    max-width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  .contact_title {
+    font-size: 25px;
+  }
+  .contact_card_group {
+    margin-top: 35px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact_description {
+    font-size: 11px;
+  }
+  .contact_card {
+    width: 100%;
+    padding: 30px 60px 30px 60px;
+    box-shadow: 5px 5px 5px 5px #03030580;
+  }
+  .contact_card:hover {
+    scale: 1;
+  }
+  .contact_card_title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .contact_card p {
+    font-size: 16px;
+  }
+  .contact_card i {
+    margin-bottom: 12px;
+    font-size: 40px;
+  }
+  .contact_form_and_location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .contact_form_title {
+    font-size: 20px;
+  }
+  .static_input_group {
+    gap: 10px;
+  }
+  .static_input_group input {
+    height: 45px;
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+  .contact_textarea {
+    margin-top: 12px;
+    height: 160px;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  .contact_textarea::placeholder {
+    font-size: 16px;
+  }
+  .send_message_btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .contact_location {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+  .contact_container {
+    max-width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  .contact_header p {
+    font-size: 13px;
+  }
+  .contact_title {
+    font-size: 23px;
+  }
+  .contact_card_group {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact_description {
+    font-size: 11px;
+  }
+  .contact_card {
+    width: 100%;
+    padding: 30px 60px 30px 60px;
+    box-shadow: 5px 5px 5px 5px #03030580;
+  }
+  .contact_card:hover {
+    scale: 1;
+  }
+  .contact_card_title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .contact_card p {
+    font-size: 16px;
+  }
+  .contact_card i {
+    margin-bottom: 12px;
+    font-size: 40px;
+  }
+  .contact_form_and_location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .contact_form_title {
+    font-size: 20px;
+  }
+  .static_input_group {
+    gap: 8px;
+  }
+  .static_input_group input {
+    height: 35px;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  .contact_textarea {
+    margin-top: 12px;
+    height: 160px;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .contact_textarea::placeholder {
+    font-size: 13px;
+  }
+  .send_message_btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .contact_location {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+  .contact_container {
+    max-width: 100%;
+    padding: 0 10px 0 10px;
+  }
+  .contact_header p {
+    font-size: 10px;
+  }
+  .contact_title {
+    font-size: 23px;
+  }
+  .contact_card_group {
+    margin-top: 23px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact_description {
+    font-size: 11px;
+  }
+  .contact_card {
+    width: 100%;
+    padding: 30px 60px 30px 60px;
+    box-shadow: 5px 5px 5px 5px #03030580;
+  }
+  .contact_card:hover {
+    scale: 1;
+  }
+  .contact_card_title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .contact_card p {
+    font-size: 14px;
+  }
+  .contact_card i {
+    margin-bottom: 12px;
+    font-size: 30px;
+  }
+  .contact_form_and_location {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+  }
+  .contact_form_title {
+    font-size: 20px;
+  }
+  .static_input_group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .static_input_group input {
+    height: 35px;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  .contact_textarea {
+    margin-top: 12px;
+    height: 140px;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .contact_textarea::placeholder {
+    font-size: 13px;
+  }
+  .send_message_btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .contact_location {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+  }
+}

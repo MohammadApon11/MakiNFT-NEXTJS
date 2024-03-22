@@ -1,0 +1,1449 @@
+/* explore collections card style start from here  */
+.home_1_explore_collection {
+  max-width: 1320px;
+  margin: 120px auto auto auto;
+}
+.home_1_collection_card_group {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+}
+.home_1_collection_card_image {
+  width: 424px;
+  height: 260px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.transition_effect {
+  transition: all 0.3s ease;
+}
+.home_1_collection_card_profile_container {
+  margin-top: 16px;
+}
+.home_1_collection_profile_left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.home_1_collection_profile_image_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home_1_collection_profile_image_icon {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+.home_1_collection_card_profile_image {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+}
+.home_1_collection_icon_container {
+  position: absolute;
+  top: 40%;
+  right: -7px;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  background: #5f5fff;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_1_profile_title {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.home_1_collection_card_description {
+  display: flex;
+  flex-direction: column;
+}
+.home_1_collection_card_description small {
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 60%;
+  font-weight: 500;
+}
+.home_1_collection_card_description span {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.home_1_love_container {
+  background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+  padding: 8px;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.home_1_love_container svg {
+  color: #ff4450;
+  font-size: 14px;
+}
+/* explore card style end here  */
+
+/* explore and live auctions style responsive here */
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+  /* explore card style start from here  */
+  .home_1_explore_collection {
+    max-width: 1200px;
+    margin: 100px auto auto auto;
+  }
+  .home_1_collection_card_group {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .home_1_collection_card_image {
+    /* max-width: 375px; */
+    width: 383px;
+    height: 240px;
+    border-radius: 8px;
+  }
+  .home_1_collection_sub_image_container {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_explore_sub_image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+  }
+  .home_1_collection_sub_image_opacity {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    opacity: 40%;
+  }
+  .home_2_sub_image_effect_container {
+    position: relative;
+  }
+  .home_2_sub_image_effect {
+    position: absolute;
+    top: 30%;
+    left: 32%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_2_sub_image_effect_number {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_2_sub_image_effect_text {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_collection_card_profile_container {
+    margin-top: 16px;
+  }
+  .home_1_collection_profile_left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .home_1_collection_profile_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_profile_image_icon {
+    width: 70px;
+    height: 70px;
+    position: relative;
+  }
+  .home_1_collection_card_profile_image {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+  }
+  .home_1_collection_icon_container {
+    position: absolute;
+    top: 40%;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    background: #5f5fff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_1_profile_title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_1_collection_card_description small {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 60%;
+    font-weight: 500;
+  }
+  .home_1_collection_card_description span {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_love_container {
+    background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+    padding: 8px;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .home_1_love_container svg {
+    color: #ff4450;
+    font-size: 14px;
+  }
+  /* explore card style end here  */
+
+  /* live auctions style start from here */
+  .home-2-live-auction-header {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-2-live-auction-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .live-explore-more-btn {
+    border: none;
+    background: transparent;
+    color: #5f5fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .live-explore-more-btn i {
+    font-size: 11px;
+  }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .home_1_explore_collection {
+    max-width: 1000px;
+    margin: 80px auto auto auto;
+  }
+  .home_2_explore_title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .home_1_collection_card_group {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .home_1_collection_card_image {
+    /* max-width: 375px; */
+    width: 318px;
+    height: 190px;
+    border-radius: 8px;
+  }
+  .home_1_collection_sub_image_container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_explore_sub_image {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+  }
+  .home_1_collection_sub_image_opacity {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    opacity: 40%;
+  }
+  .home_2_sub_image_effect_container {
+    position: relative;
+  }
+  .home_2_sub_image_effect {
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_2_sub_image_effect_number {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_2_sub_image_effect_text {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  .home_1_collection_card_profile_container {
+    margin-top: 14px;
+  }
+  .home_1_collection_profile_left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .home_1_collection_profile_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_profile_image_icon {
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+  .home_1_collection_card_profile_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  .home_1_collection_icon_container {
+    position: absolute;
+    top: 40%;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    background: #5f5fff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_1_profile_title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_1_collection_card_description small {
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 60%;
+    font-weight: 500;
+  }
+  .home_1_collection_card_description span {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_love_container {
+    background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+    padding: 7px;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .home_1_love_container svg {
+    color: #ff4450;
+    font-size: 14px;
+  }
+  /* explore card style end here  */
+
+  /* live auctions style start from here */
+  .home-2-live-auction-header {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-2-live-auction-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .live-explore-more-btn {
+    border: none;
+    background: transparent;
+    color: #5f5fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .live-explore-more-btn i {
+    font-size: 11px;
+  }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .home_1_explore_collection {
+    max-width: 900px;
+    margin: 70px auto auto auto;
+  }
+  .home_2_explore_title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .home_1_collection_card_group {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .home_1_collection_card_image {
+    /* max-width: 375px; */
+    width: 285px;
+    height: 160px;
+    border-radius: 8px;
+  }
+  .home_1_collection_sub_image_container {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_explore_sub_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  .home_1_collection_sub_image_opacity {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    opacity: 40%;
+  }
+  .home_2_sub_image_effect_container {
+    position: relative;
+  }
+  .home_2_sub_image_effect {
+    position: absolute;
+    top: 29%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_2_sub_image_effect_number {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_2_sub_image_effect_text {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  .home_1_collection_card_profile_container {
+    margin-top: 12px;
+  }
+  .home_1_collection_profile_left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .home_1_collection_profile_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_profile_image_icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  .home_1_collection_card_profile_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+  .home_1_collection_icon_container {
+    position: absolute;
+    top: 40%;
+    right: -7px;
+    width: 13px;
+    height: 13px;
+    font-size: 11px;
+    background: #5f5fff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_1_collection_card_description {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_1_profile_title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_1_description_margin_bottom {
+    margin-top: -5px;
+  }
+  .home_1_collection_card_description small {
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 60%;
+    font-weight: 500;
+  }
+  .home_1_collection_card_description span {
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_love_container {
+    background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+    padding: 7px;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .home_1_love_container svg {
+    color: #ff4450;
+    font-size: 14px;
+  }
+  /* explore card style end here  */
+
+  /* live auctions style start from here */
+  .home-2-live-auction-header {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-2-live-auction-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .live-explore-more-btn {
+    border: none;
+    background: transparent;
+    color: #5f5fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .live-explore-more-btn i {
+    font-size: 11px;
+  }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .home_1_explore_collection {
+    max-width: 695px;
+    margin: 50px auto auto auto;
+  }
+  .home_2_explore_title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .home_1_collection_card_group {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .home_1_collection_card_image {
+    /* max-width: 375px; */
+    width: 219.3px;
+    height: 130px;
+    border-radius: 6px;
+  }
+  .home_1_collection_sub_image_container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_explore_sub_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+  .home_1_collection_sub_image_opacity {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    opacity: 40%;
+  }
+  .home_2_sub_image_effect_container {
+    position: relative;
+  }
+  .home_2_sub_image_effect {
+    position: absolute;
+    top: 28%;
+    left: 27.5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_2_sub_image_effect_number {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_2_sub_image_effect_text {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  .home_1_collection_card_profile_container {
+    margin-top: 10px;
+  }
+  .home_1_collection_profile_left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .home_1_collection_profile_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_profile_image_icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  .home_1_collection_card_profile_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  .home_1_collection_icon_container {
+    position: absolute;
+    top: 39%;
+    right: -5px;
+    width: 11px;
+    height: 11px;
+    font-size: 9px;
+    background: #5f5fff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_1_collection_card_description {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_1_profile_title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_1_description_margin_bottom {
+    margin-top: -7px;
+  }
+  .home_1_collection_card_description small {
+    font-size: 9px;
+    color: #ffffff;
+    opacity: 60%;
+    font-weight: 500;
+  }
+  .home_1_collection_card_description span {
+    font-size: 9px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_love_container {
+    background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+    padding: 4px;
+    color: #ffffff;
+    font-size: 9px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .home_1_love_container svg {
+    color: #ff4450;
+    font-size: 11px;
+  }
+  /* explore card style end here  */
+
+  /* live auctions style start from here */
+  .home-2-live-auction-header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-2-live-auction-title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .live-explore-more-btn {
+    border: none;
+    background: transparent;
+    color: #5f5fff;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .live-explore-more-btn i {
+    font-size: 9px;
+  }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+  .explore-more-btn i {
+    font-size: 8px !important;
+  }
+  .live-explore-more-btn i {
+    font-size: 8px !important;
+  }
+  .home_1_explore_collection {
+    max-width: 520px;
+    margin: 45px auto auto auto;
+  }
+  .home_2_explore_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .home_1_collection_card_group {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .home_1_collection_card_image {
+    /* max-width: 375px; */
+    width: 250px;
+    height: 135px;
+    border-radius: 8px;
+  }
+  .home_1_collection_sub_image_container {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_explore_sub_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  .home_1_collection_sub_image_opacity {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    opacity: 40%;
+  }
+  .home_2_sub_image_effect_container {
+    position: relative;
+  }
+  .home_2_sub_image_effect {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_2_sub_image_effect_number {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_2_sub_image_effect_text {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  .home_1_collection_card_profile_container {
+    margin-top: 12px;
+  }
+  .home_1_collection_profile_left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .home_1_collection_profile_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_profile_image_icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  .home_1_collection_card_profile_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+  .home_1_collection_icon_container {
+    position: absolute;
+    top: 39%;
+    right: -5px;
+    width: 13px;
+    height: 13px;
+    font-size: 9px;
+    background: #5f5fff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_1_collection_card_description {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_1_profile_title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_1_description_margin_bottom {
+    margin-top: -5px;
+  }
+  .home_1_collection_card_description small {
+    font-size: 10px;
+    color: #ffffff;
+    opacity: 60%;
+    font-weight: 500;
+  }
+  .home_1_collection_card_description span {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_love_container {
+    background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+    padding: 5px;
+    color: #ffffff;
+    font-size: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .home_1_love_container svg {
+    color: #ff4450;
+    font-size: 12px;
+  }
+  .one_hide_668_541 {
+    display: none;
+  }
+  /* explore card style end here  */
+
+  /* live auctions style start from here */
+  .home-2-live-auction-header {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-2-live-auction-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .live-explore-more-btn {
+    border: none;
+    background: transparent;
+    color: #5f5fff;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .live-explore-more-btn i {
+    font-size: 9px;
+  }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+  .home_1_explore_collection {
+    max-width: 100%;
+    padding: 0 15px 0 15px;
+    margin: 40px auto auto auto;
+  }
+  .home_2_explore_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .home_1_collection_card_group {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_card_image {
+    /* max-width: 230px; */
+    width: 45vw;
+    height: 130px;
+    border-radius: 6px;
+  }
+  .home_1_collection_sub_image_container {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_explore_sub_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+  }
+  .home_1_collection_sub_image_opacity {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    opacity: 40%;
+  }
+  .home_2_sub_image_effect_container {
+    position: relative;
+  }
+  .home_2_sub_image_effect {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_2_sub_image_effect_number {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_2_sub_image_effect_text {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  .home_1_collection_card_profile_container {
+    margin-top: 10px;
+  }
+  .home_1_collection_profile_left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .home_1_collection_profile_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_profile_image_icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+  .home_1_collection_card_profile_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+  }
+  .home_1_collection_icon_container {
+    position: absolute;
+    top: 39%;
+    right: -5px;
+    width: 13px;
+    height: 13px;
+    font-size: 9px;
+    background: #5f5fff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_1_collection_card_description {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_1_profile_title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_1_description_margin_bottom {
+    margin-top: -5px;
+  }
+  .home_1_collection_card_description small {
+    font-size: 9px;
+    color: #ffffff;
+    opacity: 60%;
+    font-weight: 500;
+  }
+  .home_1_collection_card_description span {
+    font-size: 9px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_love_container {
+    background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+    padding: 4px;
+    color: #ffffff;
+    font-size: 9px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .home_1_love_container svg {
+    color: #ff4450;
+    font-size: 10px;
+  }
+  .one_hide_668_541 {
+    display: none;
+  }
+  /* explore card style end here  */
+
+  /* live auctions style start from here */
+  .home-2-live-auction-header {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-2-live-auction-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .live-explore-more-btn {
+    border: none;
+    background: transparent;
+    color: #5f5fff;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .live-explore-more-btn i {
+    font-size: 8px;
+  }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+  .explore-more-btn i {
+    font-size: 6px !important;
+  }
+  .live-explore-more-btn i {
+    font-size: 6px !important;
+  }
+  .home_1_explore_collection {
+    max-width: 100%;
+    padding: 0 15px 0 15px;
+    margin: 35px auto auto auto;
+  }
+  .home_2_explore_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .home_1_collection_card_group {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .home_1_collection_card_image {
+    /* max-width: 230px; */
+    width: 45vw;
+    height: 125px;
+    border-radius: 6px;
+  }
+  .home_1_collection_sub_image_container {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_explore_sub_image {
+    width: 38px;
+    height: 38px;
+    border-radius: 4px;
+  }
+  .home_1_collection_sub_image_opacity {
+    width: 38px;
+    height: 38px;
+    border-radius: 4px;
+    opacity: 40%;
+  }
+  .home_2_sub_image_effect_container {
+    position: relative;
+  }
+  .home_2_sub_image_effect {
+    position: absolute;
+    top: 28%;
+    left: 25.5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_2_sub_image_effect_number {
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_2_sub_image_effect_text {
+    font-size: 7px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: -3px;
+  }
+  .home_1_collection_card_profile_container {
+    margin-top: 8px;
+  }
+  .home_1_collection_profile_left {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .home_1_collection_profile_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_profile_image_icon {
+    width: 28px;
+    height: 28px;
+    position: relative;
+  }
+  .home_1_collection_card_profile_image {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+  }
+  .home_1_collection_icon_container {
+    position: absolute;
+    top: 39%;
+    right: -4px;
+    width: 9px;
+    height: 9px;
+    font-size: 6px;
+    background: #5f5fff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_1_collection_card_description {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_1_profile_title {
+    font-size: 9px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_1_description_margin_bottom {
+    margin-top: -7px;
+  }
+  .home_1_collection_card_description small {
+    font-size: 7px;
+    color: #ffffff;
+    opacity: 60%;
+    font-weight: 500;
+  }
+  .home_1_collection_card_description span {
+    font-size: 7px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_love_container {
+    background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+    padding: 3px;
+    color: #ffffff;
+    font-size: 7px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .home_1_love_container svg {
+    color: #ff4450;
+    font-size: 8px;
+  }
+  .one_hide_668_541 {
+    display: none;
+  }
+  /* explore card style end here  */
+
+  /* live auctions style start from here */
+  .home-2-live-auction-header {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-2-live-auction-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .live-explore-more-btn {
+    border: none;
+    background: transparent;
+    color: #5f5fff;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+  .explore-more-btn i {
+    font-size: 6px !important;
+  }
+  .live-explore-more-btn i {
+    font-size: 6px !important;
+  }
+  .home_1_explore_collection {
+    max-width: 100%;
+    padding: 0 10px 0 10px;
+    margin: 35px auto auto auto;
+  }
+  .home_2_explore_title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+  }
+  .home_1_collection_card_group {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .home_1_collection_card_image {
+    /* max-width: 230px; */
+    width: 92.5vw;
+    height: 140px;
+    border-radius: 6px;
+  }
+  .home_1_collection_sub_image_container {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_explore_sub_image {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+  }
+  .home_1_collection_sub_image_opacity {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    opacity: 40%;
+  }
+  .home_2_sub_image_effect_container {
+    position: relative;
+  }
+  .home_2_sub_image_effect {
+    position: absolute;
+    top: 32%;
+    left: 31%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home_2_sub_image_effect_number {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_2_sub_image_effect_text {
+    font-size: 9px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: -3px;
+  }
+  .home_1_collection_card_profile_container {
+    margin-top: 8px;
+  }
+  .home_1_collection_profile_left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .home_1_collection_profile_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home_1_collection_profile_image_icon {
+    width: 45px;
+    height: 45px;
+    position: relative;
+  }
+  .home_1_collection_card_profile_image {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+  }
+  .home_1_collection_icon_container {
+    position: absolute;
+    top: 39%;
+    right: -4px;
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+    background: #5f5fff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home_1_collection_card_description {
+    display: flex;
+    flex-direction: column;
+  }
+  .home_1_profile_title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .home_1_description_margin_bottom {
+    margin-top: -5px;
+  }
+  .home_1_collection_card_description small {
+    font-size: 10px;
+    color: #ffffff;
+    opacity: 60%;
+    font-weight: 500;
+  }
+  .home_1_collection_card_description span {
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .home_1_love_container {
+    background: linear-gradient(180deg, #635dff 0%, #864aff 100%);
+    padding: 5px;
+    color: #ffffff;
+    font-size: 11px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .home_1_love_container svg {
+    color: #ff4450;
+    font-size: 8px;
+  }
+  .one_hide_668_541 {
+    display: none;
+  }
+  /* explore card style end here  */
+
+  /* live auctions style start from here */
+  .home-2-live-auction-header {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home-2-live-auction-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .live-explore-more-btn {
+    border: none;
+    background: transparent;
+    color: #5f5fff;
+    font-size: 9px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .live-explore-more-btn i {
+    font-size: 7px;
+  }
+  .two_hide_under_358 {
+    display: none;
+  }
+}
+/* home-2-explore-and-live auctions style end here */

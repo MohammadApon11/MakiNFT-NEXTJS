@@ -1,0 +1,229 @@
+/* pagination style here */
+.pagination_btn_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 24px;
+  margin-top: 64px;
+}
+.pagination_btn {
+  padding: 12px 19px;
+  background: #1e1e37;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pagination_btn svg {
+  width: 14px;
+}
+/* .pagination_btn:hover {
+  background: #635eff;
+} */
+.active {
+  background: #635eff;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+}
+/* for max width 1400px to min width 1201px*/
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .pagination_btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 18px;
+    margin-top: 40px;
+  }
+  .pagination_btn {
+    padding: 14px 18px;
+    background: #1e1e37;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .pagination_btn:hover {
+    background: #635eff;
+  }
+  .active {
+    background: #635eff;
+  }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .pagination_btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .pagination_btn {
+    padding: 12px 15px;
+    background: #1e1e37;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .pagination_btn svg {
+    width: 12px;
+  }
+  .pagination_btn:hover {
+    background: #635eff;
+  }
+  .active {
+    background: #635eff;
+  }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .pagination_btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .pagination_btn {
+    padding: 10px 13px;
+    background: #1e1e37;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .pagination_btn svg {
+    width: 11px;
+  }
+  .pagination_btn:hover {
+    background: #635eff;
+  }
+  .active {
+    background: #635eff;
+  }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+  .pagination_btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .pagination_btn {
+    padding: 8px 10px;
+    background: #1e1e37;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .pagination_btn svg {
+    width: 9px;
+  }
+  .pagination_btn:hover {
+    background: #635eff;
+  }
+  .active {
+    background: #635eff;
+  }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+  .pagination_btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    margin-top: 17px;
+  }
+  .pagination_btn {
+    padding: 8px 11px;
+    background: #1e1e37;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 600;
+  }
+  .pagination_btn svg {
+    width: 8.8px;
+  }
+  .pagination_btn:hover {
+    background: #635eff;
+  }
+  .active {
+    background: #635eff;
+  }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+  .pagination_btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .pagination_btn {
+    padding: 8px 10px;
+    background: #1e1e37;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 600;
+  }
+  .pagination_btn svg {
+    width: 8.5px;
+  }
+  .pagination_btn:hover {
+    background: #635eff;
+  }
+  .active {
+    background: #635eff;
+  }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+  .pagination_btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 4px;
+    margin-top: 5px;
+  }
+  .pagination_btn {
+    padding: 5px 8px;
+    background: #1e1e37;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 7px;
+    font-weight: 600;
+  }
+  .pagination_btn svg {
+    width: 6px;
+  }
+  .pagination_btn:hover {
+    background: #635eff;
+  }
+  .active {
+    background: #635eff;
+  }
+}

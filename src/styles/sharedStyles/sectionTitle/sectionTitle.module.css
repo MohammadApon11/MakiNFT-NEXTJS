@@ -1,0 +1,336 @@
+/* live auctions style start from here */
+.center_title_section {
+  max-width: 1320px;
+  margin: auto;
+}
+.text_start {
+  text-align: start;
+}
+.text_center {
+  text-align: center;
+}
+.start_subtitle_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.center_subtitle_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.subtitle_vl_left {
+  width: 12px;
+  height: 1px;
+  background: #635eff;
+}
+.subtitle_vl_left_hidden {
+  display: none;
+}
+.subtitle_vl_right {
+  width: 12px;
+  height: 1px;
+  background: #635eff;
+}
+.subtitle {
+  color: #635eff;
+  font-size: 12px;
+}
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+  .center_title_section {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .center_subtitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .subtitle_vl_left {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle_vl_right {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+
+  .subtitle {
+    color: #635eff;
+    font-size: 12px;
+  }
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .center_title_section {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .center_subtitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .subtitle_vl_left {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle_vl_right {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+
+  .subtitle {
+    color: #635eff;
+    font-size: 12px;
+  }
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .center_title_section {
+    max-width: 900px;
+    margin: auto;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .center_subtitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .subtitle_vl_left {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle_vl_right {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+
+  .subtitle {
+    color: #635eff;
+    font-size: 11px;
+  }
+  .title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .center_title_section {
+    max-width: 695px;
+    margin: auto;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .center_subtitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .subtitle_vl_left {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle_vl_right {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+
+  .subtitle {
+    color: #635eff;
+    font-size: 11px;
+  }
+  .title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+  .center_title_section {
+    max-width: 520px;
+    margin: auto;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .center_subtitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .subtitle_vl_left {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle_vl_right {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+
+  .subtitle {
+    color: #635eff;
+    font-size: 11px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+  .center_title_section {
+    max-width: 100%;
+    padding: 0 15px 0 15px;
+    margin: auto;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .center_subtitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .subtitle_vl_left {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle_vl_right {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+
+  .subtitle {
+    color: #635eff;
+    font-size: 11px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+  .center_title_section {
+    max-width: 100%;
+    padding: 0 15px 0 15px;
+    margin: auto;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .center_subtitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .subtitle_vl_left {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle_vl_right {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+
+  .subtitle {
+    color: #635eff;
+    font-size: 11px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+  .center_title_section {
+    max-width: 100%;
+    padding: 0 10px 0 10px;
+    margin: auto;
+  }
+  .text_center {
+    text-align: center;
+  }
+  .center_subtitle_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .subtitle_vl_left {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle_vl_right {
+    width: 12px;
+    height: 1px;
+    background: #635eff;
+  }
+  .subtitle {
+    color: #635eff;
+    font-size: 10px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+/* live auctions style end here */

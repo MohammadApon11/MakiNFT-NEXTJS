@@ -1,0 +1,1021 @@
+/* creator card style start from here */
+.creator_container{
+    max-width: 1320px;
+    margin: auto;
+}
+.creator_card_group{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 24px;
+}
+.creator_card{
+    background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+
+}
+.creator_image_container {
+    max-width: 60px;
+    margin: auto;
+    height: 60px;
+    position: relative;
+}
+.creator_card_image {
+    border-radius: 50%;
+    width: 100%;
+}
+.gg_check{
+    color: #ffffff;
+    /*  */
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .gg_check svg{
+    width: 10px;
+  }
+  .check_icon {
+    position: absolute;
+    top: 39%;
+    right: -8px;
+    background: #635eff;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.creator_card_copy{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creator_card_copy i{
+    color: #625EFF;
+    width: 12px;
+}
+.creator_card_copy span{
+    font-size: 12px;
+    margin-left: 3px;
+    opacity: 60%;
+}
+.creator_card_title{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.creator_card_info{
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.creator_card_info span{
+    font-size: 12px;
+}
+.creator_card_info i{
+    color: #625EFF;
+}
+.follow_btn{
+    margin: 27px auto auto auto;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    background: #1E1E37;
+    color: #625EFF;
+    font-weight: 600;
+}
+.follow_btn i{
+    width: 12px;
+}
+.follow_btn:hover{
+    background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+    color: #ffffff;
+}
+.info_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.info_1 svg{
+    width: 12px;
+}
+.info_2{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.info_2 svg{
+    width: 12px;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+    .creator_container{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .creator_card_group{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 22px;
+    }
+    .creator_card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator_image_container {
+        max-width: 60px;
+        margin: auto;
+        height: 60px;
+        position: relative;
+    }
+    .creator_card_image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg_check {
+        color: #ffffff;
+        font-weight: 700;
+        }
+    .check_icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator_card_copy{
+        margin-top: 8px;
+    }
+    .creator_card_copy i{
+        color: #625EFF;
+    }
+    .creator_card_copy span{
+        font-size: 12px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator_card_title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator_card_info{
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator_card_info span{
+        font-size: 12px;
+    }
+    .creator_card_info i{
+        color: #625EFF;
+    }
+    .follow_btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow_btn i{
+        font-size: 14px;
+    }
+    .follow_btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info_2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .creator_container{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .creator_card_group{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 22px;
+    }
+    .creator_card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator_image_container {
+        max-width: 60px;
+        margin: auto;
+        height: 60px;
+        position: relative;
+    }
+    .creator_card_image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg_check {
+        color: #ffffff;
+        
+        font-weight: 700;
+        }
+    .check_icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator_card_copy{
+        margin-top: 8px;
+    }
+    .creator_card_copy i{
+        color: #625EFF;
+    }
+    .creator_card_copy span{
+        font-size: 12px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator_card_title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator_card_info{
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator_card_info span{
+        font-size: 12px;
+    }
+    .creator_card_info i{
+        color: #625EFF;
+    }
+    .follow_btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow_btn i{
+        font-size: 14px;
+    }
+    .follow_btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info_2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .card_hide_three{
+        display: none;
+    }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    .creator_container{
+        max-width: 900px;
+        margin: auto;
+    }
+    .creator_card_group{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 18px;
+    }
+    .creator_card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 18px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator_image_container {
+        max-width: 60px;
+        margin: auto;
+        height: 60px;
+        position: relative;
+    }
+    .creator_card_image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg_check {
+        color: #ffffff;
+        
+        font-weight: 700;
+        }
+    .check_icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator_card_copy{
+        margin-top: 8px;
+    }
+    .creator_card_copy i{
+        color: #625EFF;
+    }
+    .creator_card_copy span{
+        font-size: 12px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator_card_title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator_card_info{
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator_card_info span{
+        font-size: 12px;
+    }
+    .creator_card_info i{
+        color: #625EFF;
+    }
+    .follow_btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow_btn i{
+        font-size: 14px;
+    }
+    .follow_btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info_2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .card_hide_three{
+        display: none;
+    }
+    .card_hide_four{
+        display: none;
+    }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .creator_container{
+        max-width: 695px;
+        margin: auto;
+    }
+    .creator_card_group{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 12px;
+    }
+    .creator_card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 18px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator_image_container {
+        max-width: 50px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .creator_card_image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg_check {
+        color: #ffffff;
+        
+        font-weight: 700;
+        }
+    .check_icon {
+        position: absolute;
+        top: 39%;
+        right: -6px;
+        background: #635eff;
+        width: 12px;
+        height: 13px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator_card_copy{
+        margin-top: 7px;
+    }
+    .creator_card_copy i{
+        color: #625EFF;
+        font-size: 14px;
+    }
+    .creator_card_copy span{
+        font-size: 11px;
+        margin-left: 2px;
+        opacity: 60%;
+    }
+    .creator_card_title{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator_card_info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator_card_info span{
+        font-size: 10px;
+    }
+    .creator_card_info i{
+        font-size: 14px;
+        color: #625EFF;
+    }
+    .follow_btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 14px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow_btn i{
+        font-size: 12px;
+    }
+    .follow_btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info_2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .gg-drop-opacity{
+        width: 14px !important;
+        height: 14px !important;
+    }
+    .gg-drop-opacity:before{
+        height: 23px !important;
+    }
+    .card_hide_three{
+        display: none;
+    }
+    .card_hide_four{
+        display: none;
+    }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+    .creator_container{
+        max-width: 520px;
+        margin: auto;
+    }
+    .creator_card_group{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 12px;
+    }
+    .creator_card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 18px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator_image_container {
+        max-width: 50px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .creator_card_image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg_check {
+        color: #ffffff;
+        
+        font-weight: 700;
+        }
+    .check_icon {
+        position: absolute;
+        top: 39%;
+        right: -6px;
+        background: #635eff;
+        width: 12px;
+        height: 13px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator_card_copy{
+        margin-top: 7px;
+    }
+    .creator_card_copy i{
+        color: #625EFF;
+        font-size: 14px;
+    }
+    .creator_card_copy span{
+        font-size: 11px;
+        margin-left: 2px;
+        opacity: 60%;
+    }
+    .creator_card_title{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator_card_info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator_card_info span{
+        font-size: 10px;
+    }
+    .creator_card_info i{
+        font-size: 14px;
+        color: #625EFF;
+    }
+    .follow_btn{
+        margin: 27px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 14px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow_btn i{
+        font-size: 12px;
+    }
+    .follow_btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info_2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .gg-drop-opacity{
+        width: 14px !important;
+        height: 14px !important;
+    }
+    .gg-drop-opacity:before{
+        height: 23px !important;
+    }
+    .card_hide_three{
+        display: none;
+    }
+    .card_hide_four{
+        display: none;
+    }
+    .hide_for_768_541{
+        display: none;
+    }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+    .creator_container{
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+    }
+    .creator_card_group{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 12px;
+    }
+    .creator_card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 16px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator_image_container {
+        max-width: 50px;
+        height: 50px;
+        margin: auto;
+        position: relative;
+    }
+    .creator_card_image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg_check {
+        color: #ffffff;
+        
+        font-weight: 700;
+        }
+    .check_icon {
+        position: absolute;
+        top: 39%;
+        right: -6px;
+        background: #635eff;
+        width: 12px;
+        height: 13px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator_card_copy{
+        margin-top: 7px;
+    }
+    .creator_card_copy i{
+        color: #625EFF;
+        font-size: 14px;
+    }
+    .creator_card_copy span{
+        font-size: 11px;
+        margin-left: 2px;
+        opacity: 60%;
+    }
+    .creator_card_title{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator_card_info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator_card_info span{
+        font-size: 10px;
+    }
+    .creator_card_info i{
+        font-size: 14px;
+        color: #625EFF;
+    }
+    .follow_btn{
+        margin: 20px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 13px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow_btn i{
+        font-size: 12px;
+    }
+    .follow_btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info_2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .gg-drop-opacity{
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .gg-drop-opacity:before{
+        height: 22px !important;
+    }
+    .card_hide_three{
+        display: none;
+    }
+    .card_hide_four{
+        display: none;
+    }
+    .hide_for_768_541{
+        display: none;
+    }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+    .creator_container{
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: auto;
+    }
+    .creator_card_group{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+    }
+    .creator_card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator_image_container {
+        max-width: 70px;
+        height: 70px;
+        margin: auto;
+        position: relative;
+    }
+    .creator_card_image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg_check {
+        color: #ffffff;
+        
+        font-weight: 700;
+        }
+    .check_icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator_card_copy{
+        margin-top: 8px;
+    }
+    .creator_card_copy i{
+        color: #625EFF;
+    }
+    .creator_card_copy span{
+        font-size: 12px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator_card_title{
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator_card_info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator_card_info span{
+        font-size: 12px;
+    }
+    .creator_card_info i{
+        color: #625EFF;
+    }
+    .follow_btn{
+        margin: 24px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow_btn i{
+        font-size: 14px;
+    }
+    .follow_btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info_2{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    .card_hide_three{
+        display: none;
+    }
+    .card_hide_four{
+        display: none;
+    }
+    .hide_for_768_541{
+        display: none;
+    }
+    .hide_for_480_359{
+        display: none;
+    }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+    .creator_container{
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+    }
+    .creator_card_group{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+    }
+    .creator_card{
+        background: linear-gradient(180deg, #1E1E37 0%, rgba(30, 30, 55, 0) 100%);
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        color: #ffffff;
+    
+    }
+    .creator_image_container {
+        max-width: 70px;
+        height: 70px;
+        margin: auto;
+        position: relative;
+    }
+    .creator_card_image {
+        border-radius: 50%;
+        width: 100%;
+    }
+    .gg_check {
+        color: #ffffff;
+        
+        font-weight: 700;
+        }
+    .check_icon {
+        position: absolute;
+        top: 39%;
+        right: -8px;
+        background: #635eff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .creator_card_copy{
+        margin-top: 7px;
+    }
+    .creator_card_copy i{
+        font-size: 13px;
+        color: #625EFF;
+    }
+    .creator_card_copy span{
+        font-size: 10px;
+        margin-left: 3px;
+        opacity: 60%;
+    }
+    .creator_card_title{
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .creator_card_info{
+        margin-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .creator_card_info span{
+        font-size: 9px;
+    }
+    .creator_card_info i{
+        color: #625EFF;
+        font-size: 14px;
+    }
+    .follow_btn{
+        margin: 20px auto auto auto;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        font-size: 13px;
+        background: #1E1E37;
+        color: #625EFF;
+        font-weight: 600;
+    }
+    .follow_btn i{
+        font-size: 13px;
+    }
+    .follow_btn:hover{
+        background: linear-gradient(180deg, #645DFF 0%, #864BFF 100%);
+        color: #ffffff;
+    }
+    .info_2{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-top: 2px;
+    }
+    .info_2 span{
+        margin-top: 4px;
+    } 
+    .gg-drop-opacity{
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .gg-drop-opacity::before{
+        height: 22px !important;
+    }
+    .card_hide_three{
+        display: none;
+    }
+    .card_hide_four{
+        display: none;
+    }
+    .hide_for_768_541{
+        display: none;
+    }
+    .hide_for_480_359{
+        display: none;
+    }
+}
+/* creator card style end here */

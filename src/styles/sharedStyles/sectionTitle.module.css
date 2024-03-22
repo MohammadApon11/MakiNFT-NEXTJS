@@ -1,0 +1,56 @@
+.section_title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.section_margin {
+  margin-left: 12px;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+  .section_title {
+    font-size: 45px;
+  }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .section_title {
+    font-size: 40px;
+  }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .section_title {
+    font-size: 35px;
+  }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .section_title {
+    font-size: 32px;
+  }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+  .section_title {
+    font-size: 25px;
+  }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+  .section_title {
+    font-size: 25px;
+  }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+  .section_title {
+    font-size: 25px;
+  }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+  .section_title {
+    font-size: 15px;
+  }
+}

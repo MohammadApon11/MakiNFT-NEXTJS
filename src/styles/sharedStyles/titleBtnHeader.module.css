@@ -1,0 +1,52 @@
+.title_btn_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    color: #625EFF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .btn{
+        font-size: 15px;
+    }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+    .btn{
+        font-size: 14px;
+    }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+    .btn{
+        font-size: 13px;
+    }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+    .btn{
+        font-size: 12px;
+    }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+    .btn{
+        font-size: 11px;
+    }
+}

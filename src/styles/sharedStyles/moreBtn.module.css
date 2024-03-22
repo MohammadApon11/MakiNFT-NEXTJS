@@ -1,0 +1,208 @@
+.more_btn {
+  margin: 64px auto auto auto;
+  color: #625eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background: transparent;
+  border-radius: 8px;
+  padding: 12px 24px;
+  border: 1px solid #625eff;
+  text-decoration: none;
+}
+.bg_more_btn {
+  margin: 64px auto auto auto;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #1E1E37;
+  border-radius: 8px;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+.bg_more_btn_start {
+  margin-top: 64px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #1E1E37;
+  border-radius: 8px;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+.more_btn:hover {
+  background: linear-gradient(180deg, #625eff 0%, #8849ff 100%);
+  color: #ffffff;
+}
+.bg_more_btn_start:hover {
+  background: linear-gradient(180deg, #625eff 0%, #8849ff 100%);
+  color: #ffffff;
+}
+.bg_more_btn:hover{
+  background: linear-gradient(180deg, #625eff 0%, #8849ff 100%);
+  color: #ffffff;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+  .more_btn {
+    margin: 55px auto auto auto;
+  }
+  .bg_more_btn {
+    margin: 55px auto auto auto;
+  }
+  .bg_more_btn_start {
+    margin-top: 55px;
+  }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .more_btn {
+    margin: 50px auto auto auto;
+  }
+  .bg_more_btn {
+    margin: 50px auto auto auto;
+  }
+  .bg_more_btn_start {
+    margin-top: 50px;
+  }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .more_btn {
+    margin: 45px auto auto auto;
+  }
+  .bg_more_btn {
+    margin: 45px auto auto auto;
+  }
+  .bg_more_btn_start {
+    margin-top: 45px;
+  }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .more_btn {
+    margin: 40px auto auto auto;
+    gap: 6px;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+  .bg_more_btn {
+    margin: 40px auto auto auto;
+    gap: 6px;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+  .bg_more_btn_start {
+    margin-top: 40px;
+    gap: 6px;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+  .more_btn {
+    margin: 35px auto auto auto;
+    gap: 5px;
+    padding: 9px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .bg_more_btn {
+    margin: 35px auto auto auto;
+    gap: 5px;
+    padding: 9px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .bg_more_btn_start {
+    margin-top: 35px;
+    gap: 5px;
+    padding: 9px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+  .more_btn {
+    margin: 30px auto auto auto;
+    gap: 4px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .bg_more_btn {
+    margin: 30px auto auto auto;
+    gap: 4px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .bg_more_btn_start {
+    margin-top: 30px;
+    gap: 4px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+  .more_btn {
+    margin: 25px auto auto auto;
+    gap: 4px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .bg_more_btn {
+    margin: 25px auto auto auto;
+    gap: 4px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .bg_more_btn_start {
+    margin-top: 25px;
+    gap: 4px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+  .more_btn {
+    margin: 20px auto auto auto;
+    gap: 3px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+  .bg_more_btn {
+    margin: 20px auto auto auto;
+    gap: 3px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+  .bg_more_btn_start {
+    margin-top: 20px;
+    gap: 3px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+}

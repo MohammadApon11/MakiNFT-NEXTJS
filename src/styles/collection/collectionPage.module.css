@@ -1,0 +1,931 @@
+/* collection section style start from here */
+.collection_container {
+  max-width: 1320px;
+  margin: auto;
+}
+.collection_card_group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.collection_card {
+  position: relative;
+  max-width: 424px;
+  height: 498px;
+  padding: 24px;
+  background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+  border-radius: 8px;
+}
+.collection_card_image {
+  width: 376px;
+  height: 260px;
+  border-radius: 8px;
+}
+.collection_card_sub_image_group {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub_image {
+  max-width: 76px;
+  height: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.collection_card_title {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.created_by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.created_by small {
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 60%;
+}
+.created_by span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.collection_card_progress {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection_card_single_progress {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.collection_card_single_progress small {
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 60%;
+}
+.man svg {
+  color: #625eff;
+}
+.collection_card_single_progress i {
+  color: #ff4450;
+}
+.profile {
+  position: absolute;
+  top: -255px;
+  left: 137px;
+  position: relative;
+}
+.collection_profile_image {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.correct {
+  position: absolute;
+  bottom: 0;
+  left: 43px;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+  .collection_container {
+    max-width: 1200px;
+    margin:auto;
+  }
+  .collection_card_group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .collection_card {
+    position: relative;
+    max-width: 387px;
+    height: 480px;
+    padding: 24px;
+    background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+    border-radius: 8px;
+  }
+  .collection_card_image {
+    max-width: 100%;
+    height: 240px;
+    border-radius: 8px;
+  }
+  .collection_card_sub_image_group {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sub_image {
+    max-width: 75px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .collection_card_title {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .created_by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .created_by small {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .created_by span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .collection_card_progress {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .collection_card_single_progress {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .collection_card_single_progress small {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .man svg {
+    color: #625eff;
+  }
+  .collection_card_single_progress i {
+    color: #ff4450;
+  }
+  .profile {
+    position: absolute;
+    top: -247px;
+    left: 125px;
+    position: relative;
+  }
+  .collection_profile_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+  }
+  .correct {
+    position: absolute;
+    bottom: 0;
+    left: 37px;
+  }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .collection_container {
+    max-width: 1000px;
+    margin:auto;
+  }
+  .collection_card_group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+  }
+  .collection_card {
+    position: relative;
+    max-width: 387px;
+    height: 395px;
+    padding: 20px;
+    background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+    border-radius: 8px;
+  }
+  .collection_card_image {
+    max-width: 100%;
+    height: 190px;
+    border-radius: 8px;
+  }
+  .collection_card_sub_image_group {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sub_image {
+    max-width: 62px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .collection_card_title {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .created_by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .created_by small {
+    font-size: 11px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .created_by span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .collection_card_progress {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .collection_card_single_progress {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .collection_card_single_progress small {
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .man svg {
+    color: #625eff;
+  }
+  .collection_card_single_progress i {
+    color: #ff4450;
+  }
+  .profile {
+    position: absolute;
+    top: -225px;
+    left: 95px;
+    position: relative;
+  }
+  .collection_profile_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+  .correct {
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+    width: 12px;
+  }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .collection_container {
+    max-width: 900px;
+    margin:auto;
+  }
+  .collection_card_group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .collection_card {
+    position: relative;
+    max-width: 387px;
+    height: 370px;
+    padding: 18px;
+    background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+    border-radius: 8px;
+  }
+  .collection_card_image {
+    max-width: 100%;
+    height: 170px;
+    border-radius: 8px;
+  }
+  .collection_card_sub_image_group {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sub_image {
+    max-width: 55px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .collection_card_title {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .created_by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .created_by small {
+    font-size: 11px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .created_by span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .collection_card_progress {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .collection_card_single_progress {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .collection_card_single_progress small {
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .man svg {
+    color: #625eff;
+  }
+  .collection_card_single_progress i {
+    color: #ff4450;
+  }
+  .profile {
+    position: absolute;
+    top: -195px;
+    left: 90px;
+    position: relative;
+  }
+  .collection_profile_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+  }
+  .correct {
+    position: absolute;
+    bottom: 0;
+    left: 29px;
+    width: 12px;
+  }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .collection_container {
+    max-width: 695px;
+    overflow: hidden;
+    margin: auto;
+  }
+  .collection_card_group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .collection_card {
+    position: relative;
+    max-width: 387px;
+    height: 430px;
+    padding: 22px;
+    background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+    border-radius: 8px;
+  }
+  .collection_card_image {
+    max-width: 100%;
+    height: 210px;
+    border-radius: 8px;
+  }
+  .collection_card_sub_image_group {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sub_image {
+    max-width: 65px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .collection_card_title {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .created_by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .created_by small {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .created_by span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .collection_card_progress {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .collection_card_single_progress {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .collection_card_single_progress small {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .man svg {
+    color: #625eff;
+  }
+  .collection_card_single_progress i {
+    color: #ff4450;
+  }
+  .profile {
+    position: absolute;
+    top: -230px;
+    left: 105px;
+    position: relative;
+  }
+  .collection_profile_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  .correct {
+    position: absolute;
+    bottom: 0;
+    left: 34px;
+  }
+  .collection_card-two-hide {
+    display: none;
+  }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+  .collection_container {
+    max-width: 520px;
+    overflow: hidden;
+    margin:auto;
+  }
+  .collection_card_group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .collection_card {
+    position: relative;
+    max-width: 256px;
+    height: 320px;
+    padding: 16px;
+    background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+    border-radius: 8px;
+  }
+  .collection_card_image {
+    max-width: 100%;
+    height: 149px;
+    border-radius: 8px;
+  }
+  .collection_card_sub_image_group {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sub_image {
+    max-width: 48px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .collection_card_title {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .created_by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .created_by small {
+    font-size: 11px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .created_by span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .collection_card_progress {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .collection_card_single_progress {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .collection_card_single_progress small {
+    font-size: 10px;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .man svg {
+    color: #625eff;
+    font-size: 12px;
+  }
+  .collection_card_single_progress i {
+    font-size: 11px;
+    color: #ff4450;
+  }
+  .collection_card_single_progress img {
+    width: 15px;
+  }
+  .profile {
+    position: absolute;
+    top: -180px;
+    left: 80px;
+    position: relative;
+  }
+  .collection_profile_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  .correct {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width: 12px;
+  }
+  .collection_card-two-hide {
+    display: none;
+  }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+  .collection_container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    margin:auto;
+  }
+  .collection_card_group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .collection_card {
+    position: relative;
+    max-width: 256px;
+    height: 295px;
+    padding: 15px;
+    background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+    border-radius: 8px;
+  }
+  .collection_card_image {
+    max-width: 100%;
+    height: 140px;
+    border-radius: 8px;
+  }
+  .collection_card_sub_image_group {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sub_image {
+    max-width: 44px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .collection_card_title {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .created_by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .created_by small {
+    font-size: 11px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .created_by span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .collection_card_progress {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .collection_card_single_progress {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .collection_card_single_progress small {
+    font-size: 9px;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .man svg {
+    color: #625eff;
+    font-size: 12px;
+  }
+  .collection_card_single_progress i {
+    font-size: 11px;
+    color: #ff4450;
+  }
+  .collection_card_single_progress img {
+    width: 13px;
+  }
+  .profile {
+    position: absolute;
+    top: -160px;
+    left: 73px;
+    position: relative;
+  }
+  .collection_profile_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+  }
+  .correct {
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    width: 12px;
+  }
+  .collection_card-two-hide {
+    display: none;
+  }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+  .collection_container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    margin: auto;
+  }
+  .collection_card_group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .collection_card {
+    margin-top: 15px;
+    position: relative;
+    max-width: 450px;
+    height: 480px;
+    padding: 40px;
+    background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+    border-radius: 8px;
+  }
+  .collection_card_image {
+    max-width: 100%;
+    height: 60%;
+    border-radius: 8px;
+  }
+  .collection_card_sub_image_group {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sub_image {
+    max-width: 65px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .collection_card_title {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .created_by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .created_by small {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .created_by span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .collection_card_progress {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .collection_card_single_progress {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .collection_card_single_progress small {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .man svg {
+    color: #625eff;
+  }
+  .collection_card_single_progress i {
+    color: #ff4450;
+  }
+  .profile {
+    position: absolute;
+    top: -57%;
+    left: 37%;
+    position: relative;
+  }
+  .collection_profile_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+  }
+  .correct {
+    position: absolute;
+    bottom: 0;
+    left: 38px;
+  }
+  .collection_card-three-hide {
+    display: none;
+  }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+  .collection_container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    margin: auto;
+  }
+  .collection_card_group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+  .collection_card {
+    position: relative;
+    max-width: 380px;
+    height: 380px;
+    padding: 18px;
+    background: linear-gradient(180deg, #1e1e37 0%, rgba(30, 30, 55, 0) 100%);
+    border-radius: 8px;
+  }
+  .collection_card_image {
+    max-width: 100%;
+    height: 185px;
+    border-radius: 8px;
+  }
+  .collection_card_sub_image_group {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sub_image {
+    max-width: 47px;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .collection_card_title {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .created_by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .created_by small {
+    font-size: 11px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .created_by span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .collection_card_progress {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .collection_card_single_progress {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .collection_card_single_progress small {
+    font-size: 10px;
+    color: #ffffff;
+    opacity: 60%;
+  }
+  .man svg {
+    color: #625eff;
+  }
+  .collection_card_single_progress i {
+    color: #ff4450;
+  }
+  .profile {
+    position: absolute;
+    top: -55%;
+    left: 35%;
+    position: relative;
+  }
+  .collection_profile_image {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+  .correct {
+    position: absolute;
+    bottom: 0;
+    left: 31px;
+  }
+  .collection_card-three-hide {
+    display: none;
+  }
+}
+/* collection section style end here */

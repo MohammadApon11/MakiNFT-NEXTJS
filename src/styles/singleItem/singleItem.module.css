@@ -1,0 +1,929 @@
+/* single item style start from here */
+.single_item_container {
+  max-width: 1320px;
+  margin: auto;
+}
+.single_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 114px;
+}
+.single_item_image {
+  max-width: 536px;
+  height: 600px;
+  border-radius: 8px;
+}
+.single_item_sub_image_group {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.single_item_sub_image {
+  max-width: 88px;
+  height: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.single_item_description_container {
+  color: #ffffff;
+}
+.single_item_title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.single_item_profile_container {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.single_item_profile_image_container {
+  display: flex;
+  align-items: center;
+}
+.single_item_profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+}
+.single_item_profile_flex {
+  margin-left: -7px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.check_div {
+  background: #625eff;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.gg_check {
+  margin-left: -4px;
+}
+.created_by {
+  opacity: 60%;
+}
+.single_item_profile_flex span {
+  font-size: 12px;
+}
+.single_item_profile_icon_container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.single_item_icon {
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+  padding: 4px;
+  background: #1e1e37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.single_item_icon svg {
+  width: 16px;
+}
+.fa_star {
+  color: #feb62b;
+}
+.share {
+  color: #22ff60;
+}
+.fa_heart {
+  color: #ff4450;
+}
+.single_item_about_container {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.singe_item_about {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.singe_item_about span {
+  font-size: 16px;
+}
+.about_opacity {
+  opacity: 60%;
+}
+.single_item_description {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #1e1e37;
+}
+.single_item_description p {
+  font-size: 16px;
+  opacity: 60%;
+  margin-bottom: 0;
+}
+.single_item_progress_and_time_container {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.single_item_progress {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.progress_image {
+  padding: 10px 12px;
+  background: #635eff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.new_bid {
+  font-size: 16px;
+  opacity: 60%;
+}
+.progress_eth {
+  font-size: 24px;
+  font-weight: 600;
+}
+.single_item_time_container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.fa_clock svg {
+  color: #645dff;
+  width: 30px;
+}
+.progress_integer {
+  font-size: 24px;
+  font-weight: 600;
+}
+.progress_string {
+  font-size: 16px;
+  opacity: 60%;
+}
+.vl {
+  width: 1px;
+  height: 10px;
+  background: #ffffff;
+  opacity: 70%;
+}
+.single_item_place_btn {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #1e1e37;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+.single_item_place_btn:hover {
+  background: linear-gradient(180deg, #615eff 0%, #8749ff 100%);
+}
+.single_item_place_btn svg {
+  width: 16px;
+}
+/* single bottom profile  */
+.single_item_history_container {
+  margin-top: 32px;
+}
+.single_item_history_info_details {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 8px;
+}
+.single_item_history_info_details:hover {
+  border-bottom: 1px dashed #2f2f57;
+}
+.single_item_history_info_details span:hover {
+  color: #625eff;
+  cursor: pointer;
+}
+.single_item_place_history_profile_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  border-bottom: 1px dashed #ffffff;
+  padding-bottom: 24px;
+}
+.single_item_place_history_profile_info:hover {
+  border-bottom: 1px dashed #2f2f57;
+}
+.place_history_profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.place_profile_name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.place_and_time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.place_and_time span {
+  font-size: 12px;
+}
+.place_a_bid {
+  opacity: 60%;
+}
+.place_time {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.place_time .fa_clock svg {
+  width: 13px;
+}
+.place_profile_eth_container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.eth_icon {
+  background: #625eff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eth_icon img {
+  width: 15px;
+}
+.eth_number {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.eth_equal {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+#border_none {
+  border: none;
+}
+/* for max 1545 px to min 1400px */
+@media only screen and (min-width: 1400px) and (max-width: 1545px) {
+  .single_item_container {
+    max-width: 1200px;
+  }
+  .single_item {
+    gap: 80px;
+  }
+  .single_item_image {
+    max-width: 500px;
+    height: 550px;
+  }
+}
+/* for max 1400 px to min 1201px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .single_item_container {
+    max-width: 1000px;
+  }
+  .single_item {
+    gap: 60px;
+  }
+  .single_item_image {
+    max-width: 450px;
+    height: 500px;
+  }
+  .single_item_sub_image_group {
+    margin-top: 20px;
+  }
+  .single_item_sub_image {
+    max-width: 75px;
+    height: 100%;
+  }
+  .single_item_title {
+    font-size: 40px;
+  }
+  .single_item_profile_container {
+    margin-top: 13px;
+  }
+  .single_item_profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+  }
+  .single_item_about_container {
+    margin-top: 13px;
+  }
+  .single_item_about_container span {
+    font-size: 14px;
+  }
+  .singe_item_about {
+    gap: 5px;
+  }
+  .single_item_description {
+    margin-top: 20px;
+    padding: 18px;
+  }
+  .single_item_description p {
+    font-size: 14px;
+  }
+  .single_item_progress_and_time_container {
+    margin-top: 20px;
+  }
+  .single_item_progress {
+    gap: 3px;
+  }
+  .progress_image {
+    padding: 8px 10px;
+  }
+  .progress_image img {
+    width: 14px;
+  }
+  .new_bid {
+    font-size: 14px;
+  }
+  .progress_eth {
+    font-size: 20px;
+  }
+  .single_item_time_container {
+    gap: 16px;
+  }
+  .single_item_time_container svg {
+    width: 24px;
+  }
+  .progress_integer {
+    font-size: 20px;
+  }
+  .single_item_place_btn {
+    margin-top: 30px;
+  }
+  .single_item_history_container {
+    margin-top: 28px;
+  }
+  .single_item_history_info_details {
+    font-size: 15px;
+  }
+  .single_item_place_history_profile_info {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .eth_icon {
+    width: 30px;
+    height: 30px;
+  }
+  .eth_icon img {
+    width: 13px;
+  }
+  .eth_number {
+    font-size: 14px;
+  }
+  .eth_equal {
+    font-size: 11px;
+  }
+}
+/* for big tab and laptops*/
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .single_item_container {
+    max-width: 900px;
+  }
+  .single_item {
+    gap: 50px;
+  }
+  .single_item_image {
+    max-width: 400px;
+    height: 450px;
+  }
+  .single_item_sub_image_group {
+    margin-top: 17px;
+  }
+  .single_item_sub_image {
+    max-width: 65px;
+    height: 100%;
+  }
+  .single_item_title {
+    font-size: 30px;
+  }
+  .single_item_profile_container {
+    margin-top: 11px;
+  }
+  .single_item_profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+  }
+  .single_item_about_container {
+    margin-top: 13px;
+  }
+  .single_item_about_container span {
+    font-size: 13px;
+  }
+  .singe_item_about {
+    gap: 4px;
+  }
+  .single_item_description {
+    margin-top: 17px;
+    padding: 16px;
+  }
+  .single_item_description p {
+    font-size: 13px;
+  }
+  .single_item_progress_and_time_container {
+    margin-top: 17px;
+  }
+  .single_item_progress {
+    gap: 3px;
+  }
+  .progress_image {
+    padding: 7px 9px;
+  }
+  .progress_image img {
+    width: 13px;
+  }
+  .new_bid {
+    font-size: 13px;
+  }
+  .progress_eth {
+    font-size: 17px;
+  }
+  .single_item_time_container {
+    gap: 14px;
+  }
+  .single_item_time_container svg {
+    width: 22px;
+  }
+  .progress_integer {
+    font-size: 17px;
+  }
+  .single_item_place_btn {
+    margin-top: 27px;
+  }
+  .single_item_history_container {
+    margin-top: 25px;
+  }
+  .single_item_history_info_details {
+    font-size: 15px;
+  }
+  .single_item_place_history_profile_info {
+    margin-top: 18px;
+    padding-bottom: 18px;
+  }
+  .eth_icon {
+    width: 28px;
+    height: 28px;
+  }
+  .eth_icon img {
+    width: 12px;
+  }
+  .eth_number {
+    font-size: 14px;
+  }
+  .eth_equal {
+    font-size: 11px;
+  }
+}
+/* for laptops and small screen */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .single_item_container {
+    max-width: 695px;
+  }
+  .single_item {
+    gap: 25px;
+  }
+  .single_item_image {
+    max-width: 300px;
+    height: 350px;
+  }
+  .single_item_sub_image_group {
+    margin-top: 15px;
+  }
+  .single_item_sub_image {
+    max-width: 55px;
+    height: 100%;
+  }
+  .single_item_title {
+    font-size: 25px;
+  }
+  .single_item_profile_container {
+    margin-top: 11px;
+  }
+  .single_item_profile {
+    width: 55px;
+    height: 55px;
+    border-radius: 6px;
+  }
+  .single_item_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .single_item_icon svg {
+    width: 13px;
+  }
+  .single_item_profile_flex {
+    gap: 5px;
+  }
+  .single_item_profile_flex span {
+    font-size: 11px;
+  }
+  .single_item_about_container {
+    margin-top: 10px;
+  }
+  .single_item_about_container span {
+    font-size: 11px;
+  }
+  .singe_item_about {
+    gap: 2px;
+  }
+  .single_item_description {
+    margin-top: 15px;
+    padding: 14px;
+  }
+  .single_item_description p {
+    font-size: 12px;
+  }
+  .single_item_progress_and_time_container {
+    margin-top: 15px;
+  }
+  .single_item_progress {
+    gap: 2px;
+  }
+  .progress_image {
+    padding: 6px 8px;
+  }
+  .progress_image img {
+    width: 12px;
+  }
+  .new_bid {
+    font-size: 12px;
+  }
+  .progress_eth {
+    font-size: 15px;
+  }
+  .single_item_time_container {
+    gap: 10px;
+  }
+  .single_item_time_container svg {
+    width: 20px;
+  }
+  .progress_integer {
+    font-size: 15px;
+  }
+  .single_item_place_btn {
+    margin-top: 24px;
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  .single_item_history_container {
+    margin-top: 20px;
+  }
+  .single_item_history_info_details {
+    font-size: 14px;
+    padding-bottom: 6px;
+  }
+  .single_item_place_history_profile_info {
+    margin-top: 15px;
+    padding-bottom: 17px;
+  }
+  .place_profile_name {
+    font-size: 15px;
+  }
+  .place_and_time {
+    font-size: 11px;
+  }
+  .place_and_time .fa_clock {
+    font-size: 13px;
+  }
+  .eth_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .eth_icon img {
+    width: 11px;
+  }
+  .eth_number {
+    font-size: 13px;
+  }
+  .eth_equal {
+    font-size: 11px;
+  }
+}
+/* for tab and laptops responsive */
+@media only screen and (max-width: 768px) and (min-width: 541px) {
+  .single_item_container {
+    max-width: 520px;
+  }
+  .single_item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .single_item_time_container svg {
+    width: 24px;
+  }
+  .single_item_image {
+    max-width: 100%;
+    height: 590px;
+  }
+  .singe_item_about {
+    gap: 6px;
+  }
+  .single_item_about_container span {
+    font-size: 15px;
+  }
+  .new_bid {
+    font-size: 15px;
+  }
+  .progress_eth {
+    font-size: 22px;
+  }
+  .single_item_time_container {
+    gap: 15px;
+  }
+  .progress_integer {
+    font-size: 22px;
+  }
+}
+/* microsoft surface duo series device */
+@media only screen and (max-width: 540px) and (min-width: 481px) {
+  .single_item_container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .single_item_time_container svg {
+    width: 24px;
+  }
+  .single_item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .single_item_image {
+    max-width: 100%;
+    height: 540px;
+  }
+  .single_item_sub_image {
+    width: 84px;
+  }
+  .single_item_title {
+    font-size: 44px;
+  }
+  .singe_item_about {
+    gap: 4px;
+  }
+  .single_item_about_container span {
+    font-size: 13px;
+  }
+  .single_item_description {
+    padding: 20px;
+  }
+  .single_item_description p {
+    font-size: 13px;
+  }
+  .new_bid {
+    font-size: 14px;
+  }
+  .progress_eth {
+    font-size: 20px;
+  }
+  .single_item_time_container {
+    gap: 10px;
+  }
+  .progress_integer {
+    font-size: 20px;
+  }
+}
+/* for sm device */
+@media only screen and (max-width: 480px) and (min-width: 359px) {
+  .single_item_time_container svg {
+    width: 20px;
+  }
+  .single_item_container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .single_item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .single_item_image {
+    width: 100%;
+    height: 450px;
+  }
+  .single_item_sub_image {
+    width: 63px;
+  }
+  .single_item_title {
+    font-size: 35px;
+  }
+  .singe_item_about {
+    gap: 3px;
+  }
+  .single_item_about_container {
+    flex-wrap: wrap;
+  }
+  .single_item_about_container span {
+    font-size: 14px;
+  }
+  .single_item_description {
+    padding: 18px;
+  }
+  .single_item_description p {
+    font-size: 14px;
+  }
+  .progress_image {
+    padding: 8px 10px;
+  }
+  .progress_image img {
+    width: 12px;
+  }
+  .new_bid {
+    font-size: 12px;
+  }
+  .progress_eth {
+    font-size: 16px;
+  }
+  .single_item_time_container {
+    gap: 4px;
+  }
+  .progress_integer {
+    font-size: 16px;
+  }
+  .single_item_time_container .fa_clock {
+    font-size: 22px;
+  }
+  .single_item_history_info_details {
+    font-size: 14px;
+  }
+  .place_profile_name {
+    font-size: 16px;
+  }
+  .place_and_time {
+    gap: 3px;
+  }
+  .place_and_time span {
+    font-size: 11px;
+  }
+  .eth_icon {
+    width: 28px;
+    height: 28px;
+  }
+  .eth_icon img {
+    width: 12px;
+  }
+  .eth_number {
+    font-size: 14px;
+  }
+  .eth_equal {
+    font-size: 11px;
+  }
+}
+/* for xs device */
+@media only screen and (max-width: 358px) {
+  .single_item_time_container svg {
+    width: 18px;
+  }
+  .single_item_container {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .single_item {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .single_item_image {
+    width: 100%;
+    height: 370px;
+  }
+  .single_item_sub_image {
+    width: 50px;
+  }
+  .single_item_title {
+    font-size: 30px;
+  }
+  .single_item_profile_icon_container {
+    gap: 2px;
+  }
+  .single_item_profile {
+    width: 50px;
+    height: 50px;
+  }
+  .single_item_profile_flex {
+    margin-left: -8px;
+    gap: 2px;
+  }
+  .single_item_profile_flex span {
+    font-size: 11px;
+  }
+  .single_item_icon {
+    width: 22px;
+    height: 22px;
+  }
+  .single_item_icon svg {
+    width: 11px;
+  }
+  .singe_item_about {
+    gap: 3px;
+  }
+  .single_item_about_container {
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .single_item_about_container span {
+    font-size: 13px;
+  }
+  .single_item_description {
+    margin-top: 14px;
+    padding: 12px;
+  }
+  .single_item_description p {
+    font-size: 13px;
+  }
+  .single_item_progress_and_time_container {
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .progress_image {
+    padding: 8px 10px;
+  }
+  .progress_image img {
+    width: 12px;
+  }
+  .new_bid {
+    font-size: 16px;
+  }
+  .progress_eth {
+    font-size: 20px;
+  }
+  .single_item_time_container {
+    gap: 4px;
+    margin-left: 2px;
+    margin-top: 5px;
+  }
+  .progress_integer {
+    font-size: 20px;
+  }
+  .single_item_time_container .fa_clock {
+    font-size: 26px;
+  }
+  .single_item_place_btn {
+    margin-top: 30px;
+    font-size: 14px;
+    gap: 5px;
+  }
+  .single_item_history_container {
+    margin-top: 14px;
+  }
+  .single_item_history_info_details {
+    font-size: 12px;
+  }
+  .single_item_place_history_profile_info {
+    padding-bottom: 15px;
+  }
+  .place_profile_name {
+    font-size: 14px;
+  }
+  .place_history_profile {
+    gap: 5px;
+  }
+  .place_a_bid {
+    margin-bottom: -3px;
+  }
+  .place_and_time {
+    gap: 1px;
+  }
+  .place_and_time span {
+    font-size: 9px;
+  }
+  .eth_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .eth_icon img {
+    width: 10px;
+  }
+  .eth_number {
+    font-size: 12px;
+  }
+  .eth_equal {
+    font-size: 9px;
+  }
+}
+/* single item style end here */
