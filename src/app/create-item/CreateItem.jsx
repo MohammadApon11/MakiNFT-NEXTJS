@@ -3,6 +3,7 @@ import createItemStyles from "../../styles/create-item/createItem.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faTag, faArrowUp,faStar,faShareNodes,faHeart,faHammer } from "@fortawesome/free-solid-svg-icons";
 import { faClock, faUser } from "@fortawesome/free-regular-svg-icons";
+import Link from "next/link";
 
 const CreateItem = () => {
   return (
@@ -125,7 +126,7 @@ const CreateItem = () => {
             </button>
           </div>
         </form>
-        <div
+        <Link href="singleitem" 
           className={`${createItemStyles.card_area} ${createItemStyles.right_one_s}`}
         >
           <div className={createItemStyles.card_content}>
@@ -216,7 +217,7 @@ const CreateItem = () => {
             <FontAwesomeIcon icon={faHammer} /> Place Bid
             </button>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import topSellerStyles from "../../styles/home-3/topsellerhome3.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -16,6 +16,18 @@ import {
 import { faIntercom } from "@fortawesome/free-brands-svg-icons";
 
 const TopSellerHome3 = () => {
+  const [btnText, setBtnText] = useState("");
+  const handleBtnText = (text) => {
+    if (!btnText) {
+      setBtnText(text);
+    }
+    if (btnText && btnText === "Followed") {
+      setBtnText("Follow");
+    }
+    if (btnText && btnText === "Follow") {
+      setBtnText("Followed");
+    }
+  };
   const props = {
     title: "Home 2 Top Seller",
   };
@@ -73,7 +85,7 @@ const TopSellerHome3 = () => {
                 />
                 <div className={topSellerStyles.check_icon}>
                   <i className={topSellerStyles.gg_check}>
-                    <FontAwesomeIcon icon={faCheck}  />
+                    <FontAwesomeIcon icon={faCheck} />
                   </i>
                 </div>
               </div>
@@ -131,7 +143,7 @@ const TopSellerHome3 = () => {
               </h4>
               <div className={topSellerStyles.top_seller_card_info}>
                 <div className={topSellerStyles.info_1}>
-                <i>
+                  <i>
                     <FontAwesomeIcon icon={faIntercom} />
                   </i>
                   <span> NFTs: 24</span>

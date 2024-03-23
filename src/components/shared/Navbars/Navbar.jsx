@@ -6,6 +6,7 @@ import { PiWalletLight } from "react-icons/pi";
 import { FaBars } from "react-icons/fa";
 import { GiTireIronCross } from "react-icons/gi";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isClick, setIsClick] = useState(false);
@@ -22,6 +23,8 @@ const Navbar = () => {
   const handleSubPage = () => {
     setSubPageClick(!isSubPageClick);
   };
+
+  const pathName = usePathname();
 
   return (
     <>
@@ -43,14 +46,14 @@ const Navbar = () => {
             {subHomeNavShown && (
               <ul className={navStyle.pages_group}>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/" && "font-bold"} ${navStyle.page}`}
                   href="/"
                   onClick={() => setHomeSubNavShown(false)}
                 >
                   <li>Home 1</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${navStyle.page}`}
                   href="/home-2"
                   onClick={() => setHomeSubNavShown(false)}
                 >
@@ -58,7 +61,9 @@ const Navbar = () => {
                 </Link>
                 <Link
                   style={{ border: "none" }}
-                  className={navStyle.page}
+                  className={`${pathName === "/home-3" && "font-bold"} ${`${
+                    pathName === "/home-3" && "font-bold"
+                  } ${navStyle.page}`}`}
                   href="/home-3"
                   onClick={() => setHomeSubNavShown(false)}
                 >
@@ -68,10 +73,20 @@ const Navbar = () => {
             )}
           </li>
           <li>
-            <Link href="/explore">Explore</Link>
+            <Link
+              className={`${pathName === "/explore" && "font-bold"}`}
+              href="/explore"
+            >
+              Explore
+            </Link>
           </li>
           <li>
-            <Link href="/activity-1">Activity</Link>
+            <Link
+              className={`${pathName === "/activity-1" && "font-bold"}`}
+              href="/activity-1"
+            >
+              Activity
+            </Link>
           </li>
           <li
             className={navStyle.page_list}
@@ -85,70 +100,90 @@ const Navbar = () => {
             {subPageNavShown && (
               <ul className={navStyle.pages_group}>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/explore-v2" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/explore-v2"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Explore V2</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/live-auctions" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/live-auctions"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Live Auctions</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/collection" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/collection"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Collection</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/creators" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/creators"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Creators</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/activity-1" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/activity-1"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Activity V1</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/activity-2" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/activity-2"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Activity V2</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/singleitem" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/singleitem"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Single Item</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/wallet" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/wallet"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Wallet</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/create-item" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/create-item"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Create Item</li>
                 </Link>
                 <Link
-                  className={navStyle.page}
+                  className={`${pathName === "/signup" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/signup"
                   onClick={() => setPageSubNavShown(false)}
                 >
@@ -156,7 +191,9 @@ const Navbar = () => {
                 </Link>
                 <Link
                   style={{ border: "none" }}
-                  className={navStyle.page}
+                  className={`${pathName === "/login" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/login"
                   onClick={() => setPageSubNavShown(false)}
                 >
@@ -169,7 +206,12 @@ const Navbar = () => {
             <Link href="#">Authors</Link>
           </li> */}
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link
+              className={`${pathName === "/contact" && "font-bold"}`}
+              href="/contact"
+            >
+              Contact
+            </Link>
           </li>
           <Link href="/wallet">
             <button className={navStyle.primary_btn_row}>
@@ -226,7 +268,7 @@ const Navbar = () => {
               </li>
               <div className={navStyle.hr_full}></div>
               <li
-                className={`${navStyle.nav_item} ${navStyle.active_menu}`}
+                className={`${navStyle.nav_item}`}
                 id={navStyle.sub_menu_home}
               >
                 <div className={navStyle.sub_menu} onClick={handleSubHome}>

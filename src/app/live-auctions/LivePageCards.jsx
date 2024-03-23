@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import LoadMoreBtn from "@/components/shared/LoadMoreBtn";
+import Link from "next/link";
 library.add(faClock);
 
 const LivePageCards = () => {
@@ -20,7 +21,7 @@ const LivePageCards = () => {
   return (
     <section className={livePageCardsStyles.live_card_container}>
       <div className={livePageCardsStyles.live_card_group}>
-        <div className={livePageCardsStyles.live_card_area}>
+        <Link href="singleitem"  className={livePageCardsStyles.live_card_area}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -122,8 +123,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={livePageCardsStyles.live_card_area}>
+        </Link>
+        <Link href="singleitem"  className={livePageCardsStyles.live_card_area}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -227,8 +228,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={livePageCardsStyles.live_card_area}>
+        </Link>
+        <Link href="singleitem"  className={livePageCardsStyles.live_card_area}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -332,8 +333,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={livePageCardsStyles.live_card_area}>
+        </Link>
+        <Link href="singleitem"  className={livePageCardsStyles.live_card_area}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -437,8 +438,8 @@ const LivePageCards = () => {
               Buy Now
             </button>
           </div>
-        </div>
-        <div className={`${livePageCardsStyles.live_card_area} ${!loadMore ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${livePageCardsStyles.live_card_area} ${!loadMore ? "block" : "hidden"}`}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -540,8 +541,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={`${livePageCardsStyles.live_card_area} ${!loadMore ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${livePageCardsStyles.live_card_area} ${!loadMore ? "block" : "hidden"}`}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -645,8 +646,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={`${livePageCardsStyles.live_card_area} ${!loadMore ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${livePageCardsStyles.live_card_area} ${!loadMore ? "block" : "hidden"}`}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -750,8 +751,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={`${livePageCardsStyles.live_card_area} ${!loadMore ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${livePageCardsStyles.live_card_area} ${!loadMore ? "block" : "hidden"}`}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -855,9 +856,9 @@ const LivePageCards = () => {
               Buy Now
             </button>
           </div>
-        </div>
+        </Link>
         {/* hide cards */}
-        <div className={`${livePageCardsStyles.live_card_area} ${loadMore ? "block" : "hidden"}`}>
+        <Link href="singleitem"  className={`${livePageCardsStyles.live_card_area} ${loadMore ? "block" : "hidden"}`}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -959,8 +960,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={`${livePageCardsStyles.live_card_area} ${loadMore ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${livePageCardsStyles.live_card_area} ${loadMore ? "block" : "hidden"}`}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -1064,8 +1065,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={`${livePageCardsStyles.live_card_area} ${loadMore ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${livePageCardsStyles.live_card_area} ${loadMore ? "block" : "hidden"}`}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -1169,8 +1170,8 @@ const LivePageCards = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={`${livePageCardsStyles.live_card_area} ${loadMore ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${livePageCardsStyles.live_card_area} ${loadMore ? "block" : "hidden"}`}>
           <div className={livePageCardsStyles.card_content}>
             <div className={livePageCardsStyles.card_image_container}>
               <div className={livePageCardsStyles.live_card_image}>
@@ -1274,7 +1275,7 @@ const LivePageCards = () => {
               Buy Now
             </button>
           </div>
-        </div>
+        </Link>
       </div>
       <LoadMoreBtn loadMore={loadMore} setLoadMore={setLoadMore} />
     </section>

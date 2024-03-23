@@ -15,6 +15,7 @@ import {
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 library.add(faClock);
 import picksStyles from "../../styles/home-3/picksHome3.module.css";
+import Link from "next/link";
 
 const PicksHome2 = () => {
   const [btnText1, setBtnText1] = useState("all");
@@ -221,7 +222,7 @@ const PicksHome2 = () => {
         </div>
       </div>
       <div className={picksStyles.picks_card_group}>
-        <div
+        <Link href="singleitem"
           className={`${picksStyles.picks_card_area} ${
             btnText1 === "all"
               ? "block"
@@ -331,8 +332,8 @@ const PicksHome2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${picksStyles.picks_card_area} ${
             btnText2 === "all"
               ? "block"
@@ -444,8 +445,8 @@ const PicksHome2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${picksStyles.picks_card_area} ${
             btnText3 === "all"
               ? "block"
@@ -557,8 +558,8 @@ const PicksHome2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${picksStyles.picks_card_area} ${
             btnText4 === "all"
               ? "block"
@@ -670,8 +671,8 @@ const PicksHome2 = () => {
               Buy Now
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${picksStyles.picks_card_area} ${
             btnText1 === "all"
               ? "block"
@@ -783,8 +784,8 @@ const PicksHome2 = () => {
               Buy Now
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${picksStyles.picks_card_area} ${
             btnText2 === "all"
               ? "block"
@@ -896,8 +897,8 @@ const PicksHome2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${picksStyles.picks_card_area} ${
             btnText3 === "all"
               ? "block"
@@ -1009,8 +1010,8 @@ const PicksHome2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${picksStyles.picks_card_area} ${
             btnText4 === "all"
               ? "block"
@@ -1120,7 +1121,7 @@ const PicksHome2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
+        </Link>
       </div>
       <ExploreBtn />
     </section>

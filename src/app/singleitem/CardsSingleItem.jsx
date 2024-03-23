@@ -26,7 +26,7 @@ const CardsSingleItem = () => {
         </Link>
       </div>
       <div className={SingleItemCardsStyles.single_item_card_group}>
-        <div className={SingleItemCardsStyles.single_item_card_area}>
+        <Link href="singleitem"  className={SingleItemCardsStyles.single_item_card_area}>
           <div className={SingleItemCardsStyles.card_content}>
             <div className={SingleItemCardsStyles.card_image_container}>
               <div className={SingleItemCardsStyles.single_item_card_image}>
@@ -142,8 +142,8 @@ const CardsSingleItem = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={SingleItemCardsStyles.single_item_card_area}>
+        </Link>
+        <Link href="singleitem"  className={SingleItemCardsStyles.single_item_card_area}>
           <div className={SingleItemCardsStyles.card_content}>
             <div className={SingleItemCardsStyles.card_image_container}>
               <div className={SingleItemCardsStyles.single_item_card_image}>
@@ -261,8 +261,8 @@ const CardsSingleItem = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={SingleItemCardsStyles.single_item_card_area}>
+        </Link>
+        <Link href="singleitem"  className={SingleItemCardsStyles.single_item_card_area}>
           <div className={SingleItemCardsStyles.card_content}>
             <div className={SingleItemCardsStyles.card_image_container}>
               <div className={SingleItemCardsStyles.single_item_card_image}>
@@ -380,8 +380,8 @@ const CardsSingleItem = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={SingleItemCardsStyles.single_item_card_area}>
+        </Link>
+        <Link href="singleitem"  className={SingleItemCardsStyles.single_item_card_area}>
           <div className={SingleItemCardsStyles.card_content}>
             <div className={SingleItemCardsStyles.card_image_container}>
               <div className={SingleItemCardsStyles.single_item_card_image}>
@@ -497,7 +497,7 @@ const CardsSingleItem = () => {
               Buy Now
             </button>
           </div>
-        </div>
+        </Link>
       </div>
       <ExploreBtn />
     </section>

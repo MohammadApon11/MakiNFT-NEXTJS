@@ -10,6 +10,7 @@ import {
   faHammer,
 } from "@fortawesome/free-solid-svg-icons";
 import ExploreBtn from "@/components/shared/ExploreBtn";
+import Link from "next/link";
 
 const RecentlyAdded = () => {
   return (
@@ -17,7 +18,7 @@ const RecentlyAdded = () => {
       <CenterSectionTitle title="Recently Added" />
       {/* <!-- explore artwork v2 card almost same that why v2 html copy here --> */}
       <div className={recentStyles.filter_card_group}>
-        <div
+        <Link href="/singleitem"
           className={`${recentStyles.card_area} ${recentStyles.down_half_s}`}
         >
           <div className={recentStyles.card_content}>
@@ -118,8 +119,8 @@ const RecentlyAdded = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${recentStyles.card_area} ${recentStyles.two_hide_under_358} ${recentStyles.down_half_s}`}
         >
           <div
@@ -224,8 +225,8 @@ const RecentlyAdded = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${recentStyles.card_area} ${recentStyles.one_hide_768_541} ${recentStyles.down_half_s}`}
         >
           <div
@@ -327,7 +328,7 @@ const RecentlyAdded = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
       <ExploreBtn />
     </section>

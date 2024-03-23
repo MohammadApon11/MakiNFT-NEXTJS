@@ -82,11 +82,10 @@
   left: -68px;
   background: #1e1e37;
   display: flex;
-  /* visibility: hidden; */
   flex-direction: column;
   transition: all 0.2s;
   scale: 1;
-  /* transform: translateY(-50px); */
+  overflow: hidden !important;
 }
 .page_list:hover .rotate_arrow_180 {
   rotate: 180deg;

@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import liveStyles from "../../styles/home-2/Home2LiveAuctions.module.css";
 import TitleBtnHeader from "@/components/shared/TitleBtnHeader";
+import Link from "next/link";
 
 const Home2LiveAuctions = () => {
   return (
@@ -16,7 +17,7 @@ const Home2LiveAuctions = () => {
       <TitleBtnHeader path={"/live-auctions"} title="Live Auctions" btnText="Explore More" />
       {/* <!-- explore artwork v2 card almost same that why v2 html copy here --> */}
       <div className={liveStyles.filter_card_group}>
-        <div
+        <Link href="singleitem"
           className={`${liveStyles.card_area} ${liveStyles.down_half_s}`}
         >
           <div className={liveStyles.card_content}>
@@ -117,8 +118,8 @@ const Home2LiveAuctions = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${liveStyles.card_area} ${liveStyles.two_hide_under_358} ${liveStyles.down_half_s}`}
         >
           <div
@@ -223,8 +224,8 @@ const Home2LiveAuctions = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem"
           className={`${liveStyles.card_area} ${liveStyles.one_hide_768_541} ${liveStyles.down_half_s}`}
         >
           <div
@@ -326,7 +327,7 @@ const Home2LiveAuctions = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

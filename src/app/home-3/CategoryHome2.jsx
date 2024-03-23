@@ -3,13 +3,14 @@ import categoryStles from "../../styles/home-3/categoryHome2.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import SectionSubTitleAndTitle from "@/components/shared/sectionsTitle/SectionSubTitleAndTitle";
+import Link from "next/link";
 
 const CategoryHome2 = () => {
   return (
     <section className={categoryStles.home_3_category_container}>
       <SectionSubTitleAndTitle title="NFTs Categories" subTitle="CATEGORY" />
       <div className={categoryStles.home_3_category_card_group}>
-        <div
+        <Link href="explore-v2"
           className={`${categoryStles.home_3_category_card} ${categoryStles.down_half_s}`}
         >
           <img
@@ -22,8 +23,8 @@ const CategoryHome2 = () => {
               <FontAwesomeIcon icon={faArrowUp} />
             </i>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="explore-v2"
           className={`${categoryStles.home_3_category_card} ${categoryStles.down_half_s}`}
         >
           <img
@@ -36,8 +37,8 @@ const CategoryHome2 = () => {
               <FontAwesomeIcon icon={faArrowUp} />
             </i>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="explore-v2"
           className={`${categoryStles.home_3_category_card} ${categoryStles.down_half_s}`}
         >
           <img
@@ -50,8 +51,8 @@ const CategoryHome2 = () => {
               <FontAwesomeIcon icon={faArrowUp} />
             </i>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="explore-v2"
           className={`${categoryStles.home_3_category_card} ${categoryStles.three_hide_480_359} ${categoryStles.down_half_s}`}
         >
           <img
@@ -64,8 +65,8 @@ const CategoryHome2 = () => {
               <FontAwesomeIcon icon={faArrowUp} />
             </i>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="explore-v2"
           className={`${categoryStles.home_3_category_card} ${categoryStles.two_hide_768_541} ${categoryStles.three_hide_480_359} ${categoryStles.down_half_s}`}
         >
           <img
@@ -78,8 +79,8 @@ const CategoryHome2 = () => {
               <FontAwesomeIcon icon={faArrowUp} />
             </i>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="explore-v2"
           className={`${categoryStles.home_3_category_card} ${categoryStles.one_hide_1024_769} ${categoryStles.two_hide_768_541} ${categoryStles.three_hide_480_359} ${categoryStles.down_half_s}`}
         >
           <img
@@ -92,7 +93,7 @@ const CategoryHome2 = () => {
               <FontAwesomeIcon icon={faArrowUp} />
             </i>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

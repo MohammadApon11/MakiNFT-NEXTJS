@@ -10,6 +10,7 @@ import {
 import { FaBars } from "react-icons/fa";
 import { GiTireIronCross } from "react-icons/gi";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Home2Nav = () => {
   const [isClick, setIsClick] = useState(false);
@@ -26,6 +27,7 @@ const Home2Nav = () => {
   const handleSubPage = () => {
     setSubPageClick(!isSubPageClick);
   };
+  const pathName = usePathname();
   return (
     <>
       <nav className={home2navStyles.nav_row}>
@@ -36,7 +38,7 @@ const Home2Nav = () => {
           <li
             onMouseEnter={() => setHomeSubNavShown(true)}
             onMouseLeave={() => setHomeSubNavShown(false)}
-            className={`${home2navStyles.active_menu} ${home2navStyles.page_list}`}
+            className={`${home2navStyles.page_list}`}
           >
             <span className={home2navStyles.desktop_home_icon}>Home</span>
             <div className={home2navStyles.rotate_arrow_180}>
@@ -45,14 +47,16 @@ const Home2Nav = () => {
             {subHomeNavShown && (
               <ul className={home2navStyles.pages_group}>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/"
                   onClick={() => setHomeSubNavShown(false)}
                 >
                   <li>Home 1</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${pathName === "/home-2" && "font-bold"} ${
+                    home2navStyles.page
+                  }`}
                   href="/home-2"
                   onClick={() => setHomeSubNavShown(false)}
                 >
@@ -60,7 +64,7 @@ const Home2Nav = () => {
                 </Link>
                 <Link
                   style={{ border: "none" }}
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/home-3"
                   onClick={() => setHomeSubNavShown(false)}
                 >
@@ -71,7 +75,9 @@ const Home2Nav = () => {
           </li>
           <li>
             <Link
-              className={home2navStyles.text_dec_none_color_white}
+              className={`${pathName === "/explore" && "font-bold"} ${
+                home2navStyles.text_dec_none_color_white
+              }`}
               href="/explore"
             >
               Explore
@@ -89,70 +95,70 @@ const Home2Nav = () => {
             {subPageNavShown && (
               <ul className={home2navStyles.pages_group}>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/explore-v2"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Explore V2</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/live-auctions"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Live Auctions</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/collection"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Collection</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/creators"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Creators</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/activity-1"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Activity V1</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/activity-2"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Activity V2</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/singleitem"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Single Item</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/wallet"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Wallet</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/create-item"
                   onClick={() => setPageSubNavShown(false)}
                 >
                   <li>Create Item</li>
                 </Link>
                 <Link
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/signup"
                   onClick={() => setPageSubNavShown(false)}
                 >
@@ -160,7 +166,7 @@ const Home2Nav = () => {
                 </Link>
                 <Link
                   style={{ border: "none" }}
-                  className={home2navStyles.page}
+                  className={`${home2navStyles.page}`}
                   href="/login"
                   onClick={() => setPageSubNavShown(false)}
                 >
@@ -177,7 +183,11 @@ const Home2Nav = () => {
               Activity
             </Link>
           </li>
-          <li>Contact</li>
+          <li>
+            <Link href="/contact" className="">
+              Contact
+            </Link>
+          </li>
         </ul>
         <div className={home2navStyles.nav_features}>
           <div className={home2navStyles.nav_search_container}>
@@ -368,7 +378,9 @@ const Home2Nav = () => {
                     </div>
                   </div>
                 </div>
-                <div className={`${isSubPageClick ? home2navStyles.hr : ""}`}></div>
+                <div
+                  className={`${isSubPageClick ? home2navStyles.hr : ""}`}
+                ></div>
                 <div
                   className={
                     isSubPageClick
@@ -399,7 +411,10 @@ const Home2Nav = () => {
                       <li>Collection</li>
                     </Link>
                     <div className={home2navStyles.sub_hr}></div>
-                    <Link className={home2navStyles.mobile_page} href="/creators">
+                    <Link
+                      className={home2navStyles.mobile_page}
+                      href="/creators"
+                    >
                       <li>Creators</li>
                     </Link>
                     <div className={home2navStyles.sub_hr}></div>

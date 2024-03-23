@@ -20,6 +20,7 @@
   border-radius: 8px 8px 0 0;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .love_div {
   display: flex;

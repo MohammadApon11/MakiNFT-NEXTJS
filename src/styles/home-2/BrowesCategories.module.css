@@ -12,6 +12,7 @@
 }
 .brows_card {
   position: relative;
+  cursor: pointer;
 }
 .brows_card:hover .brows_effect {
   visibility: visible;

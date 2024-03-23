@@ -18,7 +18,6 @@
     object-fit: cover;
     display: block;
     position: relative;
-    cursor: pointer;
   }
   .top_seller_image_container {
     max-width: 60px;
@@ -220,7 +219,6 @@
       object-fit: cover;
       display: block;
       position: relative;
-      cursor: pointer;
     }
     .top_seller_image_container {
       max-width: 60px;
@@ -347,7 +345,6 @@
       object-fit: cover;
       display: block;
       position: relative;
-      cursor: pointer;
     }
     .top_seller_image_container {
       max-width: 55px;
@@ -471,7 +468,6 @@
       object-fit: cover;
       display: block;
       position: relative;
-      cursor: pointer;
     }
     .top_seller_image_container {
       max-width: 60px;
@@ -593,7 +589,6 @@
       object-fit: cover;
       display: block;
       position: relative;
-      cursor: pointer;
     }
     .top_seller_image_container {
       max-width: 55px;
@@ -717,7 +712,6 @@
       object-fit: cover;
       display: block;
       position: relative;
-      cursor: pointer;
     }
     .top_seller_image_container {
       max-width: 60px;
@@ -849,7 +843,6 @@
       object-fit: cover;
       display: block;
       position: relative;
-      cursor: pointer;
     }
     .top_seller_image_container {
       max-width: 70px;
@@ -975,7 +968,6 @@
       object-fit: cover;
       display: block;
       position: relative;
-      cursor: pointer;
     }
     .top_seller_image_container {
       max-width: 60px;

@@ -20,7 +20,7 @@
   .nav_link_row {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 20px;
     z-index: 1;
   }
   .nav_link_row li {
@@ -93,6 +93,7 @@
     transition: all 0.2s;
     scale: 1;
     /* transform: translateY(-50px); */
+    overflow: hidden !important;
   }
   .page_list:hover .rotate_arrow_180 {
     rotate: 180deg;
@@ -239,7 +240,7 @@
       width: 12px;
     }
     .nav_link_row {
-      gap: 10px;
+      gap: 5px;
     }
     .mobile_nav_row {
       display: none;

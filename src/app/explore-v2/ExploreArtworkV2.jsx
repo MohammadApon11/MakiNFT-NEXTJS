@@ -15,6 +15,7 @@ library.add(faClock);
 import liveStyles from "../../styles/artworkv2/exploreArtworkv2.module.css";
 import PaginationBtn from "@/components/shared/PaginationBtn";
 import paginationBtnStyle from "../../styles/sharedStyles/paginationBtn.module.css";
+import Link from "next/link";
 
 const ExploreArtworkV2 = () => {
   const [btnText1, setBtnText1] = useState("all");
@@ -256,7 +257,7 @@ const ExploreArtworkV2 = () => {
         </div>
       </div>
       <div className={liveStyles.live_card_group}>
-        <div
+        <Link href="singleitem" 
           className={`${liveStyles.live_card_area} ${
             btnText1 === "all"
               ? "block"
@@ -366,8 +367,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${liveStyles.live_card_area} ${
             btnText2 === "all"
               ? "block"
@@ -479,8 +480,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${liveStyles.live_card_area} ${
             btnText3 === "all"
               ? "block"
@@ -592,8 +593,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${liveStyles.live_card_area} ${
             btnText4 === "all"
               ? "block"
@@ -705,8 +706,8 @@ const ExploreArtworkV2 = () => {
               Buy Now
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${liveStyles.live_card_area} ${
             btnText1 === "all"
               ? "block"
@@ -818,8 +819,8 @@ const ExploreArtworkV2 = () => {
               Buy Now
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${liveStyles.live_card_area} ${
             btnText2 === "all"
               ? "block"
@@ -931,8 +932,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <diLink href="singleitem" v
           className={`${liveStyles.live_card_area} ${
             btnText3 === "all"
               ? "block"
@@ -1044,8 +1045,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </diLink>
+        <Link href="singleitem" 
           className={`${liveStyles.live_card_area} ${
             btnText4 === "all"
               ? "block"
@@ -1155,8 +1156,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${liveStyles.live_card_area} ${
             btnText1 === "all"
               ? "block"
@@ -1268,9 +1269,9 @@ const ExploreArtworkV2 = () => {
               Buy Now
             </button>
           </div>
-        </div>
+        </Link>
         {/* 1 */}
-        <div
+        <Link href="singleitem" 
           className={`${currentPage === 1 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1384,8 +1385,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 1 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1499,8 +1500,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 1 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1612,9 +1613,9 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
+        </Link>
         {/* 2 */}
-        <div
+        <Link href="singleitem" 
           className={`${currentPage === 2 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1728,8 +1729,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 2 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1843,8 +1844,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 2 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1956,9 +1957,9 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
+        </Link>
         {/* 3 */}
-        <div
+        <Link href="singleitem" 
           className={`${currentPage === 3 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2072,8 +2073,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 3 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2187,8 +2188,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 3 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2300,9 +2301,9 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
+        </Link>
         {/* 4 */}
-        <div
+        <Link href="singleitem" 
           className={`${currentPage === 4 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2416,8 +2417,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 4 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2531,8 +2532,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 4 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2644,9 +2645,9 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
+        </Link>
         {/* 5 */}
-        <div
+        <Link href="singleitem" 
           className={`${currentPage === 5 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2760,8 +2761,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 5 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2875,8 +2876,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 5 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2988,9 +2989,9 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
+        </Link>
         {/* 6 */}
-        <div
+        <Link href="singleitem" 
           className={`${currentPage === 6 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3104,8 +3105,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 6 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3219,8 +3220,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 6 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3332,9 +3333,9 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
+        </Link>
         {/* 7 */}
-        <div
+        <Link href="singleitem" 
           className={`${currentPage === 7 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3448,8 +3449,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 7 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3563,8 +3564,8 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div
+        </Link>
+        <Link href="singleitem" 
           className={`${currentPage === 7 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3676,7 +3677,7 @@ const ExploreArtworkV2 = () => {
               Place Bid
             </button>
           </div>
-        </div>
+        </Link>
       </div>
       <PaginationBtn
         goToNextPage={goToNextPage}

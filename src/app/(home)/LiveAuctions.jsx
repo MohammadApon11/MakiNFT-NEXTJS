@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SectionTitle from "@/components/shared/SectionTitle";
 import { NextArrow, PrevArrow } from "@/components/shared/CustomArrow";
+import Link from "next/link";
 
 const LiveAuctions = () => {
   const props = {
@@ -54,7 +55,7 @@ const LiveAuctions = () => {
         className={`${exploreCardStyle.card_group_row}`}
       >
         <Slider {...settings}>
-          <div
+          <Link href="/singleitem"
             className={`${exploreCardStyle.card_row} ${exploreCardStyle.all} ${exploreCardStyle.popular} ${exploreCardStyle.left_one_s}`}
           >
             <div className={exploreCardStyle.card_image_row}>
@@ -108,8 +109,8 @@ const LiveAuctions = () => {
               </div>
             </div>
             <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
-          </div>
-          <div
+          </Link>
+          <Link href="/singleitem"
             className={`${exploreCardStyle.card_row} ${exploreCardStyle.all} ${exploreCardStyle.popular} ${exploreCardStyle.left_one_s}`}
           >
             <div className={exploreCardStyle.card_image_row}>
@@ -166,8 +167,8 @@ const LiveAuctions = () => {
               </div>
             </div>
             <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
-          </div>
-          <div
+          </Link>
+          <Link href="/singleitem"
             className={`${exploreCardStyle.card_row} ${exploreCardStyle.all} ${exploreCardStyle.popular} ${exploreCardStyle.right_one_s} ${exploreCardStyle.hide_two}`}
           >
             <div className={exploreCardStyle.card_image_row}>
@@ -224,8 +225,8 @@ const LiveAuctions = () => {
               </div>
             </div>
             <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
-          </div>
-          <div
+          </Link>
+          <Link href="/singleitem"
             className={`${exploreCardStyle.card_row} ${exploreCardStyle.all} ${exploreCardStyle.popular} ${exploreCardStyle.right_one_s} ${exploreCardStyle} ${exploreCardStyle.hide_one} ${exploreCardStyle.hide_two}`}
           >
             <div className={exploreCardStyle.card_image_row}>
@@ -282,8 +283,8 @@ const LiveAuctions = () => {
               </div>
             </div>
             <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
-          </div>
-          <div
+          </Link>
+          <Link href="/singleitem"
             className={`${exploreCardStyle.card_row} ${exploreCardStyle.all} ${exploreCardStyle.popular} ${exploreCardStyle.right_one_s} ${exploreCardStyle} ${exploreCardStyle.hide_one} ${exploreCardStyle.hide_two}`}
           >
             <div className={exploreCardStyle.card_image_row}>
@@ -340,7 +341,7 @@ const LiveAuctions = () => {
               </div>
             </div>
             <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
-          </div>
+          </Link>
         </Slider>
       </div>
       <ExploreBtn />

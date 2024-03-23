@@ -13,6 +13,7 @@ import {
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import Link from "next/link";
 library.add(faClock);
 
 const LiveAuctionsHome3 = () => {
@@ -20,7 +21,7 @@ const LiveAuctionsHome3 = () => {
     <section className={liveCardStyles.live_card_container}>
       <SectionSubTitleAndTitle title="Live Auctions" subTitle="AUCTION" />
       <div className={liveCardStyles.live_card_group}>
-        <div className={liveCardStyles.live_card_area}>
+        <Link href="singleitem" className={liveCardStyles.live_card_area}>
           <div className={liveCardStyles.card_content}>
             <div className={liveCardStyles.card_image_container}>
               <div className={liveCardStyles.live_card_image}>
@@ -116,8 +117,8 @@ const LiveAuctionsHome3 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={liveCardStyles.live_card_area}>
+        </Link>
+        <Link href="singleitem" className={liveCardStyles.live_card_area}>
           <div className={liveCardStyles.card_content}>
             <div className={liveCardStyles.card_image_container}>
               <div className={liveCardStyles.live_card_image}>
@@ -215,8 +216,8 @@ const LiveAuctionsHome3 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={liveCardStyles.live_card_area}>
+        </Link>
+        <Link href="singleitem" className={liveCardStyles.live_card_area}>
           <div className={liveCardStyles.card_content}>
             <div className={liveCardStyles.card_image_container}>
               <div className={liveCardStyles.live_card_image}>
@@ -314,8 +315,8 @@ const LiveAuctionsHome3 = () => {
               Place Bid
             </button>
           </div>
-        </div>
-        <div className={liveCardStyles.live_card_area}>
+        </Link>
+        <Link href="singleitem" className={liveCardStyles.live_card_area}>
           <div className={liveCardStyles.card_content}>
             <div className={liveCardStyles.card_image_container}>
               <div className={liveCardStyles.live_card_image}>
@@ -413,7 +414,7 @@ const LiveAuctionsHome3 = () => {
               Buy Now
             </button>
           </div>
-        </div>
+        </Link>
       </div>
       <ExploreBtn />
     </section>

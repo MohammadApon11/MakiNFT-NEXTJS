@@ -6,6 +6,7 @@ import { HiOutlineArrowNarrowUp } from "react-icons/hi";
 import { AiFillHeart } from "react-icons/ai";
 import PaginationBtn from "@/components/shared/PaginationBtn";
 import paginationBtnStyle from "../../styles/sharedStyles/paginationBtn.module.css";
+import Link from "next/link";
 
 const ExploreCards = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -46,7 +47,7 @@ const ExploreCards = () => {
     <section className={explorePageCardsStyles.explore_section}>
       {/* <!-- explore section card --> */}
       <div className={explorePageCardsStyles.card_group_row}>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        <Link href="singleitem" className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-1.jpg" alt="" />
           </div>
@@ -99,8 +100,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-2.jpg" alt="" />
           </div>
@@ -156,8 +157,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-3.jpg" alt="" />
           </div>
@@ -213,8 +214,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Buy Now</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-4.jpg" alt="" />
           </div>
@@ -270,8 +271,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Buy Now</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        </Link>
+        <Link href="singleitem"   v className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-6.jpg" alt="" />
           </div>
@@ -327,8 +328,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Buy Now</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-6.jpg" alt="" />
           </div>
@@ -384,8 +385,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-7.jpg" alt="" />
           </div>
@@ -441,8 +442,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-8.jpg" alt="" />
           </div>
@@ -498,8 +499,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-9.jpg" alt="" />`
           </div>
@@ -555,9 +556,9 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
         {/* 1 */}
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 1 ? "block" : "hidden"}`}>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 1 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-2.jpg" alt="" />`
           </div>
@@ -613,8 +614,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 1 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 1 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-3.jpg" alt="" />`
           </div>
@@ -670,8 +671,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 1 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 1 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-4.jpg" alt="" />`
           </div>
@@ -727,9 +728,9 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
         {/* 2 */}
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 2 ? "block" : "hidden"}`}>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 2 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-3.jpg" alt="" />`
           </div>
@@ -785,8 +786,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 2 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 2 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-4.jpg" alt="" />`
           </div>
@@ -842,8 +843,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 2 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 2 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-3.jpg" alt="" />`
           </div>
@@ -899,9 +900,9 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
         {/* 3 */}
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 3 ? "block" : "hidden"}`}>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 3 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-6.jpg" alt="" />`
           </div>
@@ -957,8 +958,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 3 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 3 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-6.jpg" alt="" />`
           </div>
@@ -1014,8 +1015,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 3 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 3 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-7.jpg" alt="" />`
           </div>
@@ -1071,9 +1072,9 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
         {/* 4 */}
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 4 ? "block" : "hidden"}`}>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 4 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-8.jpg" alt="" />`
           </div>
@@ -1129,8 +1130,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 4 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 4 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-9.jpg" alt="" />`
           </div>
@@ -1186,8 +1187,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 4 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 4 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-1.jpg" alt="" />`
           </div>
@@ -1243,9 +1244,9 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
         {/* 5 */}
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 5 ? "block" : "hidden"}`}>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 5 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-2.jpg" alt="" />`
           </div>
@@ -1301,8 +1302,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 5 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 5 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-3.jpg" alt="" />`
           </div>
@@ -1358,8 +1359,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 5 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 5 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-4.jpg" alt="" />`
           </div>
@@ -1415,9 +1416,9 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
         {/* 6 */}
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 6 ? "block" : "hidden"}`}>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 6 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-4.jpg" alt="" />`
           </div>
@@ -1473,8 +1474,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 6 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 6 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-6.jpg" alt="" />`
           </div>
@@ -1530,8 +1531,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 6 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 6 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-8.jpg" alt="" />`
           </div>
@@ -1587,9 +1588,9 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
         {/* 7 */}
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 7 ? "block" : "hidden"}`}>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 7 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-3.jpg" alt="" />`
           </div>
@@ -1645,8 +1646,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 7 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 7 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-1.jpg" alt="" />`
           </div>
@@ -1702,8 +1703,8 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div className={`${explorePageCardsStyles.card_row} ${currentPage === 7 ? "block" : "hidden"}`}>
+        </Link>
+        <Link href="singleitem"  className={`${explorePageCardsStyles.card_row} ${currentPage === 7 ? "block" : "hidden"}`}>
           <div className={explorePageCardsStyles.card_image_row}>
             <img src="images/commonCard1/card-9.jpg" alt="" />`
           </div>
@@ -1759,7 +1760,7 @@ const ExploreCards = () => {
             </div>
           </div>
           <h3 className={explorePageCardsStyles.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
       </div>
       <PaginationBtn goToNextPage={goToNextPage} goToPreviousPage={goToPreviousPage} renderPageNumbers={renderPageNumbers} />
     </section>

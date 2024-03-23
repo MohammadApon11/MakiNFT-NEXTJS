@@ -6,6 +6,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { HiOutlineArrowNarrowUp } from "react-icons/hi";
 import { AiFillHeart } from "react-icons/ai";
 import ExploreBtn from "@/components/shared/ExploreBtn";
+import Link from "next/link";
 
 const ExploreCardSection = () => {
   const [filterProduct, setFilterProduct] = useState("all");
@@ -20,21 +21,27 @@ const ExploreCardSection = () => {
         <SectionTitle title={"Explore Items"} />
         <div className={exploreCardStyle.explore_btn_group}>
           <button
-            className={`${exploreCardStyle.explore_filter_btn}  ${filterProduct === "all" && exploreCardStyle.active}`}
+            className={`${exploreCardStyle.explore_filter_btn}  ${
+              filterProduct === "all" && exploreCardStyle.active
+            }`}
             id={exploreCardStyle.all}
             onClick={() => handleFilter("all")}
           >
             All
           </button>
           <button
-            className={`${exploreCardStyle.explore_filter_btn}  ${filterProduct === "popular" && exploreCardStyle.active}`}
+            className={`${exploreCardStyle.explore_filter_btn}  ${
+              filterProduct === "popular" && exploreCardStyle.active
+            }`}
             id={exploreCardStyle.popular}
             onClick={() => handleFilter("popular")}
           >
             Popular
           </button>
           <button
-            className={`${exploreCardStyle.explore_filter_btn}  ${filterProduct === "newest" && exploreCardStyle.active}`}
+            className={`${exploreCardStyle.explore_filter_btn}  ${
+              filterProduct === "newest" && exploreCardStyle.active
+            }`}
             id={exploreCardStyle.newest}
             onClick={() => handleFilter("newest")}
           >
@@ -44,7 +51,7 @@ const ExploreCardSection = () => {
       </div>
       {/* <!-- explore section card --> */}
       <div className={exploreCardStyle.card_group_row}>
-        <div
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row} ${
             filterProduct === "all"
               ? exploreCardStyle.show
@@ -89,10 +96,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -106,8 +110,8 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -157,10 +161,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -174,8 +175,8 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -225,10 +226,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -242,8 +240,8 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -252,7 +250,9 @@ const ExploreCardSection = () => {
               ? exploreCardStyle.hide
               : exploreCardStyle.show
           }
-          ${exploreCardStyle.all} ${exploreCardStyle.popular} ${exploreCardStyle.right_one_s}`}
+          ${exploreCardStyle.all} ${exploreCardStyle.popular} ${
+            exploreCardStyle.right_one_s
+          }`}
         >
           <div className={exploreCardStyle.card_image_row}>
             <img src="images/commonCard1/card-4.jpg" alt="" />
@@ -291,10 +291,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -308,8 +305,8 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -318,7 +315,9 @@ const ExploreCardSection = () => {
               ? exploreCardStyle.hide
               : exploreCardStyle.show
           }
-          ${exploreCardStyle.all} ${exploreCardStyle.popular} ${exploreCardStyle.newest} ${exploreCardStyle.left_one_s}`}
+          ${exploreCardStyle.all} ${exploreCardStyle.popular} ${
+            exploreCardStyle.newest
+          } ${exploreCardStyle.left_one_s}`}
         >
           <div className={exploreCardStyle.card_image_row}>
             <img src="images/commonCard1/card-6.jpg" alt="" />
@@ -357,10 +356,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -374,8 +370,8 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -384,7 +380,9 @@ const ExploreCardSection = () => {
               ? exploreCardStyle.show
               : exploreCardStyle.hide
           }
-          ${exploreCardStyle.all} ${exploreCardStyle.popular} ${exploreCardStyle.newest} ${exploreCardStyle.left_half_s}`}
+          ${exploreCardStyle.all} ${exploreCardStyle.popular} ${
+            exploreCardStyle.newest
+          } ${exploreCardStyle.left_half_s}`}
         >
           <div className={exploreCardStyle.card_image_row}>
             <img src="images/commonCard1/card-6.jpg" alt="" />
@@ -423,10 +421,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -440,8 +435,8 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -450,7 +445,9 @@ const ExploreCardSection = () => {
               ? exploreCardStyle.hide
               : exploreCardStyle.show
           }
-          ${exploreCardStyle.all} ${exploreCardStyle.explore_card_hide} ${exploreCardStyle.newest} ${exploreCardStyle.right_one_s}`}
+          ${exploreCardStyle.all} ${exploreCardStyle.explore_card_hide} ${
+            exploreCardStyle.newest
+          } ${exploreCardStyle.right_one_s}`}
         >
           <div className={exploreCardStyle.card_image_row}>
             <img src="images/commonCard1/card-7.jpg" alt="" />
@@ -489,10 +486,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -506,8 +500,8 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -516,7 +510,9 @@ const ExploreCardSection = () => {
               ? exploreCardStyle.show
               : exploreCardStyle.hide
           }
-          ${exploreCardStyle.all} ${exploreCardStyle.explore_card_hide} ${exploreCardStyle.newest} ${exploreCardStyle.right_one_s}`}
+          ${exploreCardStyle.all} ${exploreCardStyle.explore_card_hide} ${
+            exploreCardStyle.newest
+          } ${exploreCardStyle.right_one_s}`}
         >
           <div className={exploreCardStyle.card_image_row}>
             <img src="images/commonCard1/card-8.jpg" alt="" />
@@ -555,10 +551,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -572,8 +565,8 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
-        </div>
-        <div
+        </Link>
+        <Link href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${exploreCardStyle.explore_card_hide} ${exploreCardStyle.explore_card_single_hide}`}
         >
@@ -614,10 +607,7 @@ const ExploreCardSection = () => {
           <h1 className={exploreCardStyle.card_title_row}>Morganitho Arts</h1>
           <div className={exploreCardStyle.card_profile_row}>
             <div className={exploreCardStyle.card_profile_1}>
-              <img
-                src="images/profile/profile-7.jpg"
-                alt=""
-              />
+              <img src="images/profile/profile-7.jpg" alt="" />
               <p className={exploreCardStyle.profile_name}>@ james_alex01</p>
             </div>
             <div className={exploreCardStyle.profile_2}>
@@ -631,7 +621,7 @@ const ExploreCardSection = () => {
             </div>
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
-        </div>
+        </Link>
       </div>
       <ExploreBtn />
     </section>
