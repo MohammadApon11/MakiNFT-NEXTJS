@@ -8,9 +8,9 @@ import { IoIosArrowForward } from "react-icons/io";
 import { GiCheckMark } from "react-icons/gi";
 import { AiFillHeart } from "react-icons/ai";
 import NavWrapper from "@/components/wrapper/NavWrapper";
+import Reveal from "@/components/framer-motion/Reveal";
 
 const Hero = () => {
-  const currentPath = usePathname();
   return (
     <header
       style={{
@@ -65,8 +65,11 @@ const Hero = () => {
           <h3 className={footerOneStyle.hero_subtile}>
             Create & Sell NFT Item.
           </h3>
+
           <h1 className={footerOneStyle.hero_title}>
-            NFT Marketplace <br />
+            <Reveal title={true} bg={"bg-[#5f5fff]"}>
+              NFT Marketplace <br />
+            </Reveal>
             Explore, Collect <br />
             or Sell
           </h1>
@@ -132,9 +135,11 @@ const Hero = () => {
                 <AiFillHeart />
               </div>
             </div>
-            <h1 className={footerOneStyle.hero_content_title}>
-              Creative White Lady
-            </h1>
+            <Reveal title={true} bg={"bg-[#5f5fff]"}>
+              <h1 className={footerOneStyle.hero_content_title}>
+                Creative White Lady
+              </h1>
+            </Reveal>
             <div className={footerOneStyle.profile_div}>
               <div className={footerOneStyle.hero_profile_1}>
                 <img

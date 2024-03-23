@@ -13,34 +13,34 @@ const HeroHome3 = () => {
         <div className={heroStyles.home_2_vector_4}>
           <img
             className={heroStyles.position_1}
-            src="images/heroBg&footerBg/home-3-hero&footer/position-1.jpg"
+            src="images/heroBg&footerBg/home-3-hero&footer/position-1.png"
             alt=""
           />
         </div>
         <div className={heroStyles.home_3_vector_1}>
           <img
             className={heroStyles.position_2}
-            src="images/heroBg&footerBg/home-3-hero&footer/position-2.jpg"
+            src="images/heroBg&footerBg/home-3-hero&footer/position-2.png"
             alt=""
           />
         </div>
         <div className={heroStyles.home_2_vector_2}>
           <img
             className={heroStyles.position_3}
-            src="images/heroBg&footerBg/home-3-hero&footer/position-3.jpg"
+            src="images/heroBg&footerBg/home-3-hero&footer/position-3.png"
             alt=""
           />
         </div>
         <div className={heroStyles.home_2_vector_3}>
           <img
             className={heroStyles.position_4}
-            src="images/heroBg&footerBg/home-3-hero&footer/position-4.jpg"
+            src="images/heroBg&footerBg/home-3-hero&footer/position-4.png"
             alt=""
           />
         </div>
         <img
           className={heroStyles.position_5}
-          src="images/heroBg&footerBg/home-3-hero&footer/position-5.jpg"
+          src="images/heroBg&footerBg/home-3-hero&footer/position-5.png"
           alt=""
         />
         <h1 className={heroStyles.home_3_hero_title}>

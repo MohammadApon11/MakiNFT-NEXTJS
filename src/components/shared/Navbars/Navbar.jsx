@@ -7,6 +7,7 @@ import { FaBars } from "react-icons/fa";
 import { GiTireIronCross } from "react-icons/gi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Reveal from "@/components/framer-motion/Reveal";
 
 const Navbar = () => {
   const [isClick, setIsClick] = useState(false);
@@ -46,7 +47,9 @@ const Navbar = () => {
             {subHomeNavShown && (
               <ul className={navStyle.pages_group}>
                 <Link
-                  className={`${pathName === "/" && "font-bold"} ${navStyle.page}`}
+                  className={`${pathName === "/" && "font-bold"} ${
+                    navStyle.page
+                  }`}
                   href="/"
                   onClick={() => setHomeSubNavShown(false)}
                 >

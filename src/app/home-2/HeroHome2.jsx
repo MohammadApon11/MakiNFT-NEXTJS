@@ -7,14 +7,17 @@ import { BsArrowRightShort } from "react-icons/bs";
 import { FaCodepen } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsersRectangle } from "@fortawesome/free-solid-svg-icons";
+import Reveal from "@/components/framer-motion/Reveal";
 
 const HeroHome2 = () => {
   const [isMouseIn, setMouseIn] = useState(false);
   const handleMouseEnter = () => {
     setMouseIn(!isMouseIn);
+    console.log("mouse in");
   };
   const handleMouseLeave = () => {
     setMouseIn(false);
+    console.log("mouse out");
   };
 
   return (
@@ -25,64 +28,70 @@ const HeroHome2 = () => {
         <section className={HeroStyles.hero_2_main_content_container}>
           <div className={HeroStyles.hero_2_main_content}>
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_1.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-1.png"
               alt=""
               className={HeroStyles.hero_2_position_1}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_2.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-2.png"
               alt=""
               className={HeroStyles.hero_2_position_2}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_3.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-3.png"
               alt=""
               className={HeroStyles.hero_2_position_3}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_4.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-4.png"
               alt=""
               className={HeroStyles.hero_2_position_4}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_5.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-5.png"
               alt=""
               className={`${HeroStyles.hero_2_position_5} ${
-                isMouseIn && HeroStyles.hover_effect_vecotr
+                isMouseIn && HeroStyles.hover_effect_vector
               }`}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_6.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-6.png"
               alt=""
               className={HeroStyles.hero_2_position_6}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_7.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-7.png"
               alt=""
               className={HeroStyles.hero_2_position_7}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_8.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-8.png"
               alt=""
-              className={`${HeroStyles.hero_2_position_8_1} ${isMouseIn && HeroStyles.hover_effect_dotteds}`}
+              className={`${HeroStyles.hero_2_position_8_1} ${
+                isMouseIn && HeroStyles.hover_effect_dotteds
+              }`}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_8.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-8.png"
               alt=""
-              className={`${HeroStyles.hero_2_position_8_2} ${isMouseIn && HeroStyles.hover_effect_dotteds}`}
+              className={`${HeroStyles.hero_2_position_8_2} ${
+                isMouseIn && HeroStyles.hover_effect_dotteds
+              }`}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_9.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-9.png"
               alt=""
-              className={`${HeroStyles.hero_2_position_9} ${isMouseIn && HeroStyles.hover_effect_vector_right}`}
+              className={`${HeroStyles.hero_2_position_9} ${
+                isMouseIn && HeroStyles.hover_effect_vector_right
+              }`}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_10.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-10.png"
               alt=""
               className={HeroStyles.hero_2_position_10}
             />
             <img
-              src="images/heroBg&footerBg/home-2-hero&footer/position_11.png"
+              src="images/heroBg&footerBg/home-2-hero&footer/position-11.png"
               alt=""
               className={HeroStyles.hero_2_position_11}
             />
@@ -92,19 +101,26 @@ const HeroHome2 = () => {
               className={HeroStyles.hero_2_position_image_shape}
             />
             <div className={HeroStyles.hero_left}>
-              <h4 className={HeroStyles.hero_2_subtitle}>
-                Create & Sell NFT Item
-              </h4>
+              <Reveal>
+                <h4 className={HeroStyles.hero_2_subtitle}>
+                  Create & Sell NFT Item
+                </h4>
+              </Reveal>
               <h1 className={HeroStyles.hero_2_title}>
-                Largest Online <br />
+                <Reveal title={true} bg={"bg-[#5f5fff]"}>
+                  {" "}
+                  Largest Online <br />
+                </Reveal>
                 market to Sell & <br />
                 Buy <br />
                 NFT Collections.
               </h1>
-              <p className={HeroStyles.hero_bottom_title}>
-                Lorem ipsum dolor sit amet, consectetu adipiscing <br />
-                elituctus nec ullamcorper.
-              </p>
+              <Reveal>
+                <p className={HeroStyles.hero_bottom_title}>
+                  Lorem ipsum dolor sit amet, consectetu adipiscing <br />
+                  elituctus nec ullamcorper.
+                </p>
+              </Reveal>
               <Link className={HeroStyles.text_decoration_none} href="/explore">
                 <button className={HeroStyles.hero_explore_btn}>
                   Explore Items{" "}
@@ -133,7 +149,11 @@ const HeroHome2 = () => {
                     </p>
                   </div>
                 </div>
-                <div className={`${HeroStyles.hero_countdown_2} ${isMouseIn && HeroStyles.hover_effect_right}`}>
+                <div
+                  className={`${HeroStyles.hero_countdown_2} ${
+                    isMouseIn && HeroStyles.hover_effect_right
+                  }`}
+                >
                   <i>
                     <FontAwesomeIcon icon={faUsersRectangle} />
                   </i>
@@ -154,7 +174,7 @@ const HeroHome2 = () => {
                   alt=""
                 />
                 <img
-                  src="images/heroBg&footerBg/home-2-hero&footer/position_5.png"
+                  src="images/heroBg&footerBg/home-2-hero&footer/position-5.png"
                   alt=""
                   className={HeroStyles.hero_2_position_hero}
                 />
