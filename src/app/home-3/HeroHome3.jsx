@@ -4,6 +4,7 @@ import heroStyles from "../../styles/home-3/HeroHome3.module.css";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Reveal from "@/components/framer-motion/Reveal";
 
 const HeroHome3 = () => {
   return (
@@ -43,15 +44,21 @@ const HeroHome3 = () => {
           src="images/heroBg&footerBg/home-3-hero&footer/position-5.png"
           alt=""
         />
-        <h1 className={heroStyles.home_3_hero_title}>
-          Largest Online marketplace to Sell <br />
-          and Buy NFTs.
-        </h1>
-        <p className={heroStyles.home_3_hero_subtitle}>
-          Lorem ipsum dolor sit amet, consectetu adipiscing <br />
-          elituctus ullamcorper more elite. Accor <br />
-          ding to more be elite.
-        </p>
+        <Reveal title={true} bg={"bg-[#5f5fff]"} center={true}>
+          <bold className={heroStyles.home_3_hero_title}>
+            Largest Online marketplace to Sell
+          </bold>
+        </Reveal>
+        <Reveal title={true} bg={"bg-[#5f5fff]"} center={true}>
+          <bold className={heroStyles.home_3_hero_title}>and Buy NFTs.</bold>
+        </Reveal>
+        <Reveal center={true}>
+          <p className={heroStyles.home_3_hero_subtitle}>
+            Lorem ipsum dolor sit amet, consectetu adipiscing <br />
+            elituctus ullamcorper more elite. Accor <br />
+            ding to more be elite.
+          </p>
+        </Reveal>
         <div className={heroStyles.home_3_hero_btn_group}>
           <Link href="/explore">
             <button className={heroStyles.explore_item_btn}>

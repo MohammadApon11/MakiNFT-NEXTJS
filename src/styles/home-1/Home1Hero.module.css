@@ -75,14 +75,12 @@
   color: #ffffff;
   font-size: 56px;
   font-weight: 700;
-  margin-top: 8px;
 }
 .hero_item {
   display: flex;
   align-items: center;
   margin-top: 16px;
   font-size: 24px;
-  font-weight: 500;
   color: #ffffff;
   opacity: 60%;
   gap: 8px;
@@ -129,6 +127,9 @@
   color: #ffff;
   font-weight: 600;
   font-size: 16px;
+}
+.hero_btn_2:hover {
+  background: linear-gradient(to bottom right, #625eff, #8849ff);
 }
 .hero_btn_arrow {
   font-size: 10px;
@@ -287,9 +288,6 @@
   left: -180px;
   z-index: 1;
 }
-.hero_title > :nth-child(2) {
-  display: none;
-}
 .explore_card_single_hide {
   display: none;
 }
@@ -368,10 +366,10 @@
 /* hero responsive here */
 /* for xs device */
 @media only screen and (max-width: 358px) {
-  .hero_btn_1 svg{
+  .hero_btn_1 svg {
     font-size: 9px;
   }
-  .hero_btn_2 svg{
+  .hero_btn_2 svg {
     font-size: 9px;
   }
   .hero_item svg {
@@ -480,7 +478,7 @@
   .hero_profile_2 {
     gap: 2px;
   }
-  .hero_profile_2 div{
+  .hero_profile_2 div {
     margin-bottom: 4px;
   }
   .hero_profile_2 img {
@@ -549,10 +547,10 @@
 }
 /* for sm device */
 @media only screen and (max-width: 480px) and (min-width: 359px) {
-  .hero_btn_1 svg{
+  .hero_btn_1 svg {
     font-size: 9px;
   }
-  .hero_btn_2 svg{
+  .hero_btn_2 svg {
     font-size: 9px;
   }
   .hero_item svg {
@@ -583,9 +581,6 @@
   }
   .hero_title {
     font-size: 18px;
-  }
-  .hero_title:nth-child(1) {
-    display: none;
   }
   .hero_item {
     margin-top: 6px;
@@ -724,10 +719,10 @@
 }
 /* microsoft surface duo series device */
 @media only screen and (max-width: 540px) and (min-width: 481px) {
-  .hero_btn_1 svg{
+  .hero_btn_1 svg {
     font-size: 12px;
   }
-  .hero_btn_2 svg{
+  .hero_btn_2 svg {
     font-size: 12px;
   }
   .hero_item svg {
@@ -736,7 +731,7 @@
   .available svg {
     font-size: 9px;
   }
-  .love_div svg{
+  .love_div svg {
     font-size: 12px;
   }
   .nav_row {
@@ -784,9 +779,6 @@
   .hero_title {
     font-size: 23px;
   }
-  .hero_title > :nth-child(2) {
-    display: none;
-  }
   .hero_item {
     margin-top: 6px;
     gap: 4px;
@@ -797,7 +789,7 @@
   .hero_item p {
     font-size: 12px;
   }
-  .hero_item svgmg {
+  .hero_item svg {
     width: 4.5px;
   }
   .hero_btn_group {
@@ -946,10 +938,10 @@
     margin: auto;
     padding-top: 20px;
   }
-  .hero_btn_1 svg{
+  .hero_btn_1 svg {
     font-size: 12px;
   }
-  .hero_btn_2 svg{
+  .hero_btn_2 svg {
     font-size: 12px;
   }
   .hero_item svg {
@@ -958,7 +950,7 @@
   .available svg {
     font-size: 9px;
   }
-  .love_div svg{
+  .love_div svg {
     font-size: 12px;
   }
   .primary_btn_row {
@@ -998,9 +990,6 @@
   }
   .hero_title {
     font-size: 25px;
-  }
-  .hero_title > :nth-child(2) {
-    display: none;
   }
   .hero_item {
     margin-top: 6px;
@@ -1167,7 +1156,6 @@
     font-size: 35px;
     font-weight: 700;
     color: #ffffff;
-    margin-top: 5px;
   }
   .hero_item {
     margin-top: 10px;
@@ -1189,8 +1177,8 @@
     gap: 4px;
     border-radius: 4px;
   }
-  .hero_btn_1 svg{
-font-size: 12px;
+  .hero_btn_1 svg {
+    font-size: 12px;
   }
   .hero_btn_2 {
     font-size: 10px;
@@ -1343,7 +1331,6 @@ font-size: 12px;
   }
   .hero_title {
     font-size: 50px;
-    margin-top: 6px;
   }
   .hero_item {
     margin-top: 14px;
@@ -1535,7 +1522,7 @@ font-size: 12px;
   .hero_content_div {
     width: 60%;
   }
-  .hero_title{
+  .hero_title {
     font-size: 50px;
   }
   .hero_1_position_1 {

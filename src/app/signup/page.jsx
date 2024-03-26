@@ -9,10 +9,10 @@ const SignupPgae = () => {
     text2: "Signup",
   };
   return (
-    <>
+    <div className="overflow-hidden">
       <SubPageHero {...props} />
       <SignUp />
-    </>
+    </div>
   );
 };
 

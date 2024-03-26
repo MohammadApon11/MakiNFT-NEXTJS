@@ -9,10 +9,10 @@ const CreateItemPage = () => {
     text2: "Create Item",
   };
   return (
-    <>
+    <div className="overflow-hidden">
       <SubPageHero {...props} />
       <CreateItem />
-    </>
+    </div>
   );
 };
 

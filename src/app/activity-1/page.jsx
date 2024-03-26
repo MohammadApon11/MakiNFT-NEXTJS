@@ -10,10 +10,10 @@ const ActivityV1Page = () => {
     text3: "Activity V1",
   };
   return (
-    <>
+    <div className="overflow-hidden">
       <SubPageHero {...props} />
       <ActivityCards />
-    </>
+    </div>
   );
 };
 

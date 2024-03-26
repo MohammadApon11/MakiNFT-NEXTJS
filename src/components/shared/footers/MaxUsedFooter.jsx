@@ -1,5 +1,6 @@
 import React from "react";
 import footerStyle from "../../../styles/sharedStyles/footers/subPageFooter.module.css";
+import Magnatic from "@/components/framer-motion/Magnatic";
 
 const MaxUsedFooter = () => {
   return (
@@ -36,18 +37,26 @@ const MaxUsedFooter = () => {
                   />
                 </div>
                 <div className={footerStyle.footer_1_media}>
-                  <div className={footerStyle.media_image_container}>
-                    <img src="images/vectors&icon/in.png" alt="" />
-                  </div>
-                  <div className={footerStyle.media_image_container}>
-                    <img src="images/vectors&icon/ins.png" alt="" />
-                  </div>
-                  <div className={footerStyle.media_image_container}>
-                    <img src="images/vectors&icon/you.png" alt="" />
-                  </div>
-                  <div className={footerStyle.media_image_container}>
-                    <img src="images/vectors&icon/f.png" alt="" />
-                  </div>
+                  <Magnatic key={1}>
+                    <div className={footerStyle.media_image_container}>
+                      <img src="images/vectors&icon/in.png" alt="" />
+                    </div>
+                  </Magnatic>
+                  <Magnatic key={2}>
+                    <div className={footerStyle.media_image_container}>
+                      <img src="images/vectors&icon/ins.png" alt="" />
+                    </div>
+                  </Magnatic>
+                  <Magnatic key={3}>
+                    <div className={footerStyle.media_image_container}>
+                      <img src="images/vectors&icon/you.png" alt="" />
+                    </div>
+                  </Magnatic>
+                  <Magnatic key={4}>
+                    <div className={footerStyle.media_image_container}>
+                      <img src="images/vectors&icon/f.png" alt="" />
+                    </div>
+                  </Magnatic>
                 </div>
               </div>
             </div>

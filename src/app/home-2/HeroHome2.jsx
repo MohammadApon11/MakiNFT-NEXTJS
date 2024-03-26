@@ -106,15 +106,23 @@ const HeroHome2 = () => {
                   Create & Sell NFT Item
                 </h4>
               </Reveal>
-              <h1 className={HeroStyles.hero_2_title}>
-                <Reveal title={true} bg={"bg-[#5f5fff]"}>
+              <Reveal title={true} bg={"bg-[#5f5fff]"}>
+                <bold className={HeroStyles.hero_2_title}>
                   {" "}
                   Largest Online <br />
-                </Reveal>
-                market to Sell & <br />
-                Buy <br />
-                NFT Collections.
-              </h1>
+                </bold>
+              </Reveal>
+              <Reveal title={true} bg={"bg-[#5f5fff]"}>
+                <bold className={HeroStyles.hero_2_title}>
+                  market to Sell & Buy
+                </bold>
+              </Reveal>
+              <Reveal title={true} bg={"bg-[#5f5fff]"}>
+                <bold className={HeroStyles.hero_2_title}>
+                  NFT Collections.
+                </bold>
+              </Reveal>
+
               <Reveal>
                 <p className={HeroStyles.hero_bottom_title}>
                   Lorem ipsum dolor sit amet, consectetu adipiscing <br />

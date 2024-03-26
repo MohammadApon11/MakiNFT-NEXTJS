@@ -3,6 +3,7 @@ import titleStyles from "../../../styles/sharedStyles/sectionTitle/sectionTitle.
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Reveal from "@/components/framer-motion/Reveal";
 
 const SectionSubTitleAndTitle = ({ title, subTitle }) => {
   return (
@@ -35,7 +36,9 @@ const SectionSubTitleAndTitle = ({ title, subTitle }) => {
           <span className={titleStyles.subtitle}>{subTitle}</span>
           <div className={titleStyles.subtitle_vl_right}></div>
         </div>
-        <h1 className={titleStyles.title}>{title}</h1>
+        <Reveal center={title === "Top Seller" ? false : true}>
+          <h1 className={titleStyles.title}>{title}</h1>
+        </Reveal>
       </div>
       <Link
         className={`text-[#625EFF] font-semibold flex gap-[8px] lg:text-[16px] md:text-[11px] sm:text-[12px] text-[11px] ${

@@ -7,6 +7,7 @@ import { HiOutlineArrowNarrowUp } from "react-icons/hi";
 import { AiFillHeart } from "react-icons/ai";
 import ExploreBtn from "@/components/shared/ExploreBtn";
 import Link from "next/link";
+import { TransitionWrapper1 } from "@/components/framer-motion/TransitionWrapper";
 
 const ExploreCardSection = () => {
   const [filterProduct, setFilterProduct] = useState("all");
@@ -51,7 +52,8 @@ const ExploreCardSection = () => {
       </div>
       {/* <!-- explore section card --> */}
       <div className={exploreCardStyle.card_group_row}>
-        <Link href="/singleitem"
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row} ${
             filterProduct === "all"
               ? exploreCardStyle.show
@@ -111,7 +113,8 @@ const ExploreCardSection = () => {
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
         </Link>
-        <Link href="/singleitem"
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -176,7 +179,8 @@ const ExploreCardSection = () => {
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
         </Link>
-        <Link href="/singleitem"
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -241,7 +245,9 @@ const ExploreCardSection = () => {
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
         </Link>
-        <Link href="/singleitem"
+
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -306,7 +312,9 @@ const ExploreCardSection = () => {
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
         </Link>
-        <Link href="/singleitem"
+
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -371,7 +379,9 @@ const ExploreCardSection = () => {
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Buy Now</h3>
         </Link>
-        <Link href="/singleitem"
+
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -436,7 +446,9 @@ const ExploreCardSection = () => {
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
         </Link>
-        <Link href="/singleitem"
+
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -501,7 +513,9 @@ const ExploreCardSection = () => {
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
         </Link>
-        <Link href="/singleitem"
+
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${
             filterProduct === "all"
@@ -566,7 +580,9 @@ const ExploreCardSection = () => {
           </div>
           <h3 className={exploreCardStyle.bottom_title_row}>Place Bid</h3>
         </Link>
-        <Link href="/singleitem"
+
+        <Link
+          href="/singleitem"
           className={`${exploreCardStyle.card_row}
           ${exploreCardStyle.explore_card_hide} ${exploreCardStyle.explore_card_single_hide}`}
         >

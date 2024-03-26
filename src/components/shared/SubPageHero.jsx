@@ -1,6 +1,8 @@
 import { text } from "@fortawesome/fontawesome-svg-core";
 import subPageHeroStyle from "../../styles/sharedStyles/subPageHero.module.css";
 import Navbar from "./Navbars/Navbar";
+import Reveal from "../framer-motion/Reveal";
+import { TransitionWrapper1 } from "../framer-motion/TransitionWrapper";
 
 const SubPageHero = ({ title, text1, text2, text3 }) => {
   return (
@@ -16,23 +18,31 @@ const SubPageHero = ({ title, text1, text2, text3 }) => {
     >
       <Navbar />
       <div className={subPageHeroStyle.hero_main_content}>
-        <h1 className={subPageHeroStyle.hero_title}>{title}</h1>
+        <Reveal center={true} title={true}>
+          <h1 className={subPageHeroStyle.hero_title}>{title}</h1>
+        </Reveal>
         <div className={subPageHeroStyle.hero_item}>
-          <small>
+          <TransitionWrapper1 index={1}>
             <a className={subPageHeroStyle.link} href="/">
               {text1}
             </a>
-          </small>
+          </TransitionWrapper1>
           <img src="images/vectors&icon/herro-right-arrow.png" alt="" />
-          <small>
-            <a className={`${subPageHeroStyle.link} ${!text3 && subPageHeroStyle.current_page}`} href="/explore">
+          <TransitionWrapper1 index={3}>
+            <span
+              className={`${subPageHeroStyle.link} ${
+                !text3 && subPageHeroStyle.current_page
+              }`}
+            >
               {text2}
-            </a>
-          </small>
-          {text3 && <img src="images/vectors&icon/herro-right-arrow.png" alt="" />}
-          <small className={subPageHeroStyle.current_page}>
-            <a className={subPageHeroStyle.link_style}>{text3 || ""}</a>
-          </small>
+            </span>
+          </TransitionWrapper1>
+          {text3 && (
+            <img src="images/vectors&icon/herro-right-arrow.png" alt="" />
+          )}
+          <TransitionWrapper1 index={5}>
+            <span className={subPageHeroStyle.link_style}>{text3 || ""}</span>
+          </TransitionWrapper1>
         </div>
       </div>
     </header>

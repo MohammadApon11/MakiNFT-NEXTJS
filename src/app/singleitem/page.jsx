@@ -9,10 +9,10 @@ const SingleItemPage = () => {
     text2: "Single Items",
   };
   return (
-    <>
+    <div className="overflow-hidden">
       <SubPageHero {...props} />
       <SingleItem />
-    </>
+    </div>
   );
 };
 

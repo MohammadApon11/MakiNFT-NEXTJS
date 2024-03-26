@@ -2,6 +2,7 @@ import React from "react";
 import loginStyles from "../../styles/login/login.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import RightLeft from "@/components/framer-motion/RightLeft";
 const Login = () => {
   return (
     <div>
@@ -29,20 +30,24 @@ const Login = () => {
         </div>
         <form className={loginStyles.nft_input_form}>
           <div className={loginStyles.nft_input_group}>
-            <input
-              className={loginStyles.input_field}
-              type="email"
-              name=""
-              id=""
-              placeholder="Email Address"
-            />
-            <input
-              className={loginStyles.input_field}
-              type="password"
-              name=""
-              id=""
-              placeholder="Password"
-            />
+            <RightLeft side={"-120%"} duration={0.5}>
+              <input
+                className={loginStyles.input_field}
+                type="email"
+                name=""
+                id=""
+                placeholder="Email Address"
+              />
+            </RightLeft>
+            <RightLeft side={"120%"} duration={0.5}>
+              <input
+                className={loginStyles.input_field}
+                type="password"
+                name=""
+                id=""
+                placeholder="Password"
+              />
+            </RightLeft>
           </div>
           <div className={loginStyles.checkbox_forget}>
             <div>

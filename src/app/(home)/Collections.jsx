@@ -4,12 +4,14 @@ import collectionCardStyle from "../../styles/home-1/collection.module.css";
 import { RxCheck } from "react-icons/rx";
 import { AiFillHeart } from "react-icons/ai";
 import ExploreBtn from "@/components/shared/ExploreBtn";
+import RightLeft from "@/components/framer-motion/RightLeft";
 
 const Collections = () => {
   return (
     <section className={collectionCardStyle.home_1_explore_collection}>
       <CenterSectionTitle title={"Explore Collections"} />
       <div className={collectionCardStyle.home_1_collection_card_group}>
+        <RightLeft side={"-120%"} duration={0.6}>
           <div
             className={`${collectionCardStyle.home_3_explore_card} ${collectionCardStyle.left_one_s}`}
           >
@@ -76,6 +78,8 @@ const Collections = () => {
               </div>
             </div>
           </div>
+        </RightLeft>
+        <RightLeft side={"120%"} duration={0.5}>
           <div
             className={`${collectionCardStyle.home_3_explore_card} ${collectionCardStyle.two_hide_under_358} ${collectionCardStyle.left_half_s}`}
           >
@@ -142,6 +146,8 @@ const Collections = () => {
               </div>
             </div>
           </div>
+        </RightLeft>
+        <RightLeft side={"120%"} duration={0.6}>
           <div
             className={`${collectionCardStyle.home_3_explore_card} ${collectionCardStyle.one_hide_668_541} ${collectionCardStyle.two_hide_under} ${collectionCardStyle.right_half_s}`}
           >
@@ -208,6 +214,7 @@ const Collections = () => {
               </div>
             </div>
           </div>
+        </RightLeft>
       </div>
       <ExploreBtn />
     </section>

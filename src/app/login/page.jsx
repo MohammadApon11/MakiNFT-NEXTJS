@@ -9,10 +9,10 @@ const LoginPage = () => {
     text2: "Login",
   };
   return (
-    <>
+    <div className="overflow-hidden">
       <SubPageHero {...props} />
       <Login />
-    </>
+    </div>
   );
 };
 

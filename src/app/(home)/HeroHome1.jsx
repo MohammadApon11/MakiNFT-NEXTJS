@@ -1,14 +1,13 @@
 "use client";
-import Navbar from "@/components/shared/Navbars/Navbar";
 import React from "react";
-import footerOneStyle from "../../styles/home-1/Home1Hero.module.css";
-import { usePathname } from "next/navigation";
+import HeroOneStyle from "../../styles/home-1/Home1Hero.module.css";
 import { BsArrowRightShort } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
 import { GiCheckMark } from "react-icons/gi";
 import { AiFillHeart } from "react-icons/ai";
 import NavWrapper from "@/components/wrapper/NavWrapper";
 import Reveal from "@/components/framer-motion/Reveal";
+import Counter from "@/components/shared/Counter";
 
 const Hero = () => {
   return (
@@ -16,64 +15,70 @@ const Hero = () => {
       style={{
         backgroundImage: `url("images/heroBg&footerBg/home-1-hero&footer/home-1-hero-bg.png")`,
       }}
-      id={footerOneStyle.hero_1}
+      id={HeroOneStyle.hero_1}
     >
       <NavWrapper />
       {/* <!-- hero main content --> */}
-      <section className={footerOneStyle.hero_main_content}>
+      <section className={HeroOneStyle.hero_main_content}>
         <img
-          className={footerOneStyle.hero_1_position_1}
+          className={HeroOneStyle.hero_1_position_1}
           src="images/vectors&icon/Ellipse-1.png"
           alt=""
         />
         <img
-          className={footerOneStyle.hero_1_position_2}
+          className={HeroOneStyle.hero_1_position_2}
           src="images/vectors&icon/cross.svg"
           alt=""
         />
         <img
-          className={footerOneStyle.hero_1_position_3}
+          className={HeroOneStyle.hero_1_position_3}
           src="images/vectors&icon/Ellipse-2.png"
           alt=""
         />
         <img
-          className={footerOneStyle.hero_1_position_4}
+          className={HeroOneStyle.hero_1_position_4}
           src="images/vectors&icon/rectangle-1.png"
           alt=""
         />
         <img
-          className={footerOneStyle.hero_1_position_5}
+          className={HeroOneStyle.hero_1_position_5}
           src="images/vectors&icon/rectangle-2.png"
           alt=""
         />
         <img
-          className={footerOneStyle.hero_1_position_6}
+          className={HeroOneStyle.hero_1_position_6}
           src="images/vectors&icon/squre.svg"
           alt=""
         />
         <img
-          className={footerOneStyle.hero_1_position_8}
+          className={HeroOneStyle.hero_1_position_8}
           src="images/vectors&icon/triengle.png"
           alt=""
         />
         <img
-          className={footerOneStyle.hero_1_position_7}
+          className={HeroOneStyle.hero_1_position_7}
           src="images/vectors&icon/rectangle-3.png"
           alt=""
         />
-        <div className={footerOneStyle.hero_description}>
-          <h3 className={footerOneStyle.hero_subtile}>
+        <div className={HeroOneStyle.hero_description}>
+          <h3 className={`mb-3 ${HeroOneStyle.hero_subtile}`}>
             Create & Sell NFT Item.
           </h3>
 
-          <h1 className={footerOneStyle.hero_title}>
-            <Reveal title={true} bg={"bg-[#5f5fff]"}>
+          <Reveal title={true} bg={"bg-[#5f5fff]"}>
+            <h1 className={`${HeroOneStyle.hero_title}`}>
               NFT Marketplace <br />
-            </Reveal>
-            Explore, Collect <br />
-            or Sell
-          </h1>
-          <div className={footerOneStyle.hero_item}>
+            </h1>
+          </Reveal>
+          <Reveal title={true} bg={"bg-[#5f5fff]"}>
+            <h1 className={`-mt-3 ${HeroOneStyle.hero_title}`}>
+              Explore, Collect{" "}
+            </h1>
+          </Reveal>
+          <Reveal title={true} bg={"bg-[#5f5fff]"}>
+            <h1 className={`-mt-3 ${HeroOneStyle.hero_title}`}>or Sell</h1>
+          </Reveal>
+          <div className={HeroOneStyle.hero_item}>
             <p>
               <a href="/create-item">Create</a>
             </p>
@@ -84,82 +89,87 @@ const Hero = () => {
             <IoIosArrowForward />
             <p>Sell & Earn</p>
           </div>
-          <div className={footerOneStyle.hero_btn_group}>
+          <div className={HeroOneStyle.hero_btn_group}>
             <a style={{ textDecoration: "none" }} href="/create-item">
-              <button className={footerOneStyle.hero_btn_1}>
+              <button className={HeroOneStyle.hero_btn_1}>
                 Create Items
                 <BsArrowRightShort />
               </button>
             </a>
             <a style={{ textDecoration: "none" }} href="/wallet">
-              <button className={footerOneStyle.hero_btn_2}>
+              <button className={HeroOneStyle.hero_btn_2}>
                 Add Wallet
                 <BsArrowRightShort />
               </button>
             </a>
           </div>
-          <div className={footerOneStyle.countdown_group}>
-            <div className={footerOneStyle.hero_countdown}>
-              <p className={footerOneStyle.countdown_text}>NFTs Artworks</p>
-              <h1 className={footerOneStyle.countdown_number}>
-                <span className={footerOneStyle.counter}>2467</span>K
+          <div className={HeroOneStyle.countdown_group}>
+            <div className={HeroOneStyle.hero_countdown}>
+              <p className={HeroOneStyle.countdown_text}>NFTs Artworks</p>
+              <h1 className={HeroOneStyle.countdown_number}>
+                <span className={HeroOneStyle.counter}>
+                  <Counter end={2467} />K
+                </span>
               </h1>
             </div>
-            <div className={footerOneStyle.hero_countdown}>
-              <p className={footerOneStyle.countdown_text}>Live Auction</p>
-              <h1 className={footerOneStyle.countdown_number}>
-                <span className={footerOneStyle.counter}>1104</span>
+            <div className={HeroOneStyle.hero_countdown}>
+              <p className={HeroOneStyle.countdown_text}>Live Auction</p>
+              <h1 className={HeroOneStyle.countdown_number}>
+                <span className={HeroOneStyle.counter}>
+                  {" "}
+                  <Counter end={1104} />
+                </span>
               </h1>
             </div>
-            <div className={footerOneStyle.hero_countdown}>
-              <p className={footerOneStyle.countdown_text}>Creator Earning</p>
-              <h1 className={footerOneStyle.countdown_number}>
-                <span className={footerOneStyle.counter}>444</span>M
+            <div className={HeroOneStyle.hero_countdown}>
+              <p className={HeroOneStyle.countdown_text}>Creator Earning</p>
+              <h1 className={HeroOneStyle.countdown_number}>
+                <span className={HeroOneStyle.counter}>
+                  <Counter end={444} />M
+                </span>
               </h1>
             </div>
           </div>
         </div>
-        <div className={footerOneStyle.hero_content_img}>
+        <div className={HeroOneStyle.hero_content_img}>
           <img
-            className={footerOneStyle.hero_image}
+            className={HeroOneStyle.hero_image}
             src="images/heroBg&footerBg/home-1-hero&footer/home-1-hero-image.jpg"
             alt=""
           />
-          <div className={footerOneStyle.hero_content_div}>
-            <div className={footerOneStyle.stock}>
-              <div className={footerOneStyle.available}>
+          <div className={HeroOneStyle.hero_content_div}>
+            <div className={HeroOneStyle.stock}>
+              <div className={HeroOneStyle.available}>
                 <GiCheckMark />
                 <small>Available Stock 4</small>
               </div>
-              <div className={footerOneStyle.love_div}>
+              <div className={HeroOneStyle.love_div}>
                 <AiFillHeart />
               </div>
             </div>
             <Reveal title={true} bg={"bg-[#5f5fff]"}>
-              <h1 className={footerOneStyle.hero_content_title}>
+              <h1 className={HeroOneStyle.hero_content_title}>
                 Creative White Lady
               </h1>
             </Reveal>
-            <div className={footerOneStyle.profile_div}>
-              <div className={footerOneStyle.hero_profile_1}>
+            <div className={HeroOneStyle.profile_div}>
+              <div className={HeroOneStyle.hero_profile_1}>
                 <img
-                  className={footerOneStyle.profile_1_image}
+                  className={HeroOneStyle.profile_1_image}
                   src="images/profile/profile-6.png"
                   alt=""
                 />
-                <small className={footerOneStyle.profile_1_name}>
+                <small className={HeroOneStyle.profile_1_name}>
                   @James_alex01
                 </small>
               </div>
-              <div className={footerOneStyle.hero_profile_2}>
+              <div className={HeroOneStyle.hero_profile_2}>
                 <img src="images/vectors&icon/watch.png" alt="" />
-                <div className={footerOneStyle.profile_2}>
-                  <small className={footerOneStyle.profile_2_name}>
+                <div className={HeroOneStyle.profile_2}>
+                  <small className={HeroOneStyle.profile_2_name}>
                     New Bid:{" "}
                   </small>
-                  <small className={footerOneStyle.profile_2_ETH}>
-                    0.16 ETH
-                  </small>
+                  <small className={HeroOneStyle.profile_2_ETH}>0.16 ETH</small>
                 </div>
               </div>
             </div>

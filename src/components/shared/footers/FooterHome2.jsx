@@ -2,6 +2,7 @@ import React from "react";
 import footerHome2 from "../../../styles/sharedStyles/footers/FooterHome2.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Magnatic from "@/components/framer-motion/Magnatic";
 
 const FooterHome2 = () => {
   const currentYear = new Date().getFullYear();
@@ -11,18 +12,26 @@ const FooterHome2 = () => {
         <div className={footerHome2.footer_2_header}>
           <h1 className={footerHome2.footer_2_title}>Makinft</h1>
           <div className={footerHome2.footer_2_media}>
-            <div className={footerHome2.media_image_container}>
-              <img src="images/vectors&icon/in.png" alt="" />
-            </div>
-            <div className={footerHome2.media_image_container}>
-              <img src="images/vectors&icon/ins.png" alt="" />
-            </div>
-            <div className={footerHome2.media_image_container}>
-              <img src="images/vectors&icon/you.png" alt="" />
-            </div>
-            <div className={footerHome2.media_image_container}>
-              <img src="images/vectors&icon/f.png" alt="" />
-            </div>
+            <Magnatic key={1}>
+              <div className={footerHome2.media_image_container}>
+                <img src="images/vectors&icon/in.png" alt="" />
+              </div>
+            </Magnatic>
+            <Magnatic key={2}>
+              <div className={footerHome2.media_image_container}>
+                <img src="images/vectors&icon/ins.png" alt="" />
+              </div>
+            </Magnatic>
+            <Magnatic key={3}>
+              <div className={footerHome2.media_image_container}>
+                <img src="images/vectors&icon/you.png" alt="" />
+              </div>
+            </Magnatic>
+            <Magnatic key={4}>
+              <div className={footerHome2.media_image_container}>
+                <img src="images/vectors&icon/f.png" alt="" />
+              </div>
+            </Magnatic>
           </div>
         </div>
         <div className={footerHome2.footer_address}>

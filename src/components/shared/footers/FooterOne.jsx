@@ -6,6 +6,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
 import { ImArrowRight2 } from "react-icons/im";
 import footerBg from "../../../../public/images/heroBg&footerBg/home-1-hero&footer/home-1-footer-bg.png";
+import Magnatic from "@/components/framer-motion/Magnatic";
 
 const FooterOne = () => {
   const currentYear = new Date().getFullYear();
@@ -25,24 +26,34 @@ const FooterOne = () => {
           <div className={footerOneStyle.footer_1_header}>
             <h1 className={footerOneStyle.footer_1_title}>Makinft</h1>
             <div className={footerOneStyle.footer_1_media}>
-              <div className={footerOneStyle.media_image_container}>
-                <BiLogoLinkedin />
-              </div>
-              <div className={footerOneStyle.media_image_container}>
-                <AiOutlineInstagram />
-              </div>
-              <div className={footerOneStyle.media_image_container}>
-                <BsYoutube />
-              </div>
-              <div className={footerOneStyle.media_image_container}>
-                <FaFacebookF />
-              </div>
+              <Magnatic key={1}>
+                <div className={footerOneStyle.media_image_container}>
+                  <BiLogoLinkedin />
+                </div>
+              </Magnatic>
+              <Magnatic key={2}>
+                <div className={footerOneStyle.media_image_container}>
+                  <AiOutlineInstagram />
+                </div>
+              </Magnatic>
+              <Magnatic key={3}>
+                <div className={footerOneStyle.media_image_container}>
+                  <BsYoutube />
+                </div>
+              </Magnatic>
+              <Magnatic key={4}>
+                <div className={footerOneStyle.media_image_container}>
+                  <FaFacebookF />
+                </div>
+              </Magnatic>
             </div>
           </div>
           <div className={footerOneStyle.footer_vertical}></div>
           <div className={footerOneStyle.footer_address}>
             <div className={footerOneStyle.footer_input_style}>
-              <h1 className={footerOneStyle.footer_title}>Subscribe Newsletter</h1>
+              <h1 className={footerOneStyle.footer_title}>
+                Subscribe Newsletter
+              </h1>
               <div className={footerOneStyle.footer_1_input_flex}>
                 <input
                   className={footerOneStyle.footer_input}
@@ -67,11 +78,15 @@ const FooterOne = () => {
                 <p className={footerOneStyle.footer_address_description}>
                   Testimonial
                 </p>
-                <p className={footerOneStyle.footer_address_description}>careers</p>
+                <p className={footerOneStyle.footer_address_description}>
+                  careers
+                </p>
                 <p className={footerOneStyle.footer_address_description}>
                   About Us
                 </p>
-                <p className={footerOneStyle.footer_address_description}>Contact</p>
+                <p className={footerOneStyle.footer_address_description}>
+                  Contact
+                </p>
               </div>
             </div>
             <div>
@@ -79,7 +94,9 @@ const FooterOne = () => {
                 My Account
               </h3>
               <div className={footerOneStyle.footer_description_flex}>
-                <p className={footerOneStyle.footer_address_description}>Author</p>
+                <p className={footerOneStyle.footer_address_description}>
+                  Author
+                </p>
                 <p className={footerOneStyle.footer_address_description}>
                   Collraction
                 </p>
@@ -92,12 +109,16 @@ const FooterOne = () => {
               </div>
             </div>
             <div>
-              <h3 className={footerOneStyle.footer_title_description}>Resource</h3>
+              <h3 className={footerOneStyle.footer_title_description}>
+                Resource
+              </h3>
               <div className={footerOneStyle.footer_description_flex}>
                 <p className={footerOneStyle.footer_address_description}>
                   Turorials
                 </p>
-                <p className={footerOneStyle.footer_address_description}>Product</p>
+                <p className={footerOneStyle.footer_address_description}>
+                  Product
+                </p>
                 <p className={footerOneStyle.footer_address_description}>
                   Newsroom
                 </p>

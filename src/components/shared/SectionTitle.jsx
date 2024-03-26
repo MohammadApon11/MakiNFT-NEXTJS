@@ -4,7 +4,7 @@ import Reveal from "../framer-motion/Reveal";
 
 const SectionTitle = ({ title }) => {
   return (
-    <Reveal title={true} bg={"bg-[#5f5fff]"}>
+    <Reveal>
       <h1
         className={`${sectionTitleStyle.section_title} ${
           title === "Live Auctions" ? sectionTitleStyle.section_margin : ""

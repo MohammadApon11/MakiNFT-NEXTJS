@@ -9,7 +9,7 @@ import TopSellerHome3 from "./TopSellerHome3";
 
 const Home3Page = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <HeroHome3 />
       <LiveAuctionsHome3 />
       <CategoryHome2 />
@@ -17,7 +17,7 @@ const Home3Page = () => {
       <PopularCollection />
       <SetUpWallet />
       <TopSellerHome3 />
-    </>
+    </div>
   );
 };
 

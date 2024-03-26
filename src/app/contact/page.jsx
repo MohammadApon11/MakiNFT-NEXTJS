@@ -9,10 +9,10 @@ const ContactPage = () => {
     text2: "Contact",
   };
   return (
-    <>
+    <div className="overflow-hidden">
       <SubPageHero {...props} />
       <Contact />
-    </>
+    </div>
   );
 };
 

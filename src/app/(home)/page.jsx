@@ -7,14 +7,14 @@ import LiveAuctions from "./LiveAuctions";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Hero />
       <ExploreCardSection />
       <Categories />
       <LiveAuctions />
       <Collections />
       <TopSeller />
-    </>
+    </div>
   );
 };
 export default HomePage;

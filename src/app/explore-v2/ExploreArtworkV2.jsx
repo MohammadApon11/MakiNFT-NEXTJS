@@ -16,6 +16,7 @@ import liveStyles from "../../styles/artworkv2/exploreArtworkv2.module.css";
 import PaginationBtn from "@/components/shared/PaginationBtn";
 import paginationBtnStyle from "../../styles/sharedStyles/paginationBtn.module.css";
 import Link from "next/link";
+import { TransitionWrapper1 } from "@/components/framer-motion/TransitionWrapper";
 
 const ExploreArtworkV2 = () => {
   const [btnText1, setBtnText1] = useState("all");
@@ -257,7 +258,8 @@ const ExploreArtworkV2 = () => {
         </div>
       </div>
       <div className={liveStyles.live_card_group}>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${liveStyles.live_card_area} ${
             btnText1 === "all"
               ? "block"
@@ -272,103 +274,107 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 100 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${liveStyles.live_card_area} ${
             btnText2 === "all"
               ? "block"
@@ -383,105 +389,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 200 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-2.jpg" alt="" />
+          <TransitionWrapper1 index={2}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-2.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${liveStyles.live_card_area} ${
             btnText3 === "all"
               ? "block"
@@ -496,105 +505,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 300 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-3.jpg" alt="" />
+          <TransitionWrapper1 index={3}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-3.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${liveStyles.live_card_area} ${
             btnText4 === "all"
               ? "block"
@@ -609,105 +621,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 400 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-4.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
-                </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>{" "}
-              Available in stock 4
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={4}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-4.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
                   </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>{" "}
+                Available in stock 4
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>Price:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>Price:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faCartShopping} />
+                Buy Now
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faCartShopping} />
-              Buy Now
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${liveStyles.live_card_area} ${
             btnText1 === "all"
               ? "block"
@@ -722,105 +737,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 500 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-4.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
-                </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>{" "}
-              Available in stock 4
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={5}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-4.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
                   </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>{" "}
+                Available in stock 4
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>Price:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>Price:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faCartShopping} />
+                Buy Now
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faCartShopping} />
-              Buy Now
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${liveStyles.live_card_area} ${
             btnText2 === "all"
               ? "block"
@@ -835,105 +853,109 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 600 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-3.jpg" alt="" />
+          <TransitionWrapper1 index={6}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-3.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <diLink href="singleitem" v
+        <Link
+          href="singleitem"
+          v
           className={`${liveStyles.live_card_area} ${
             btnText3 === "all"
               ? "block"
@@ -948,105 +970,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 800 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-2.jpg" alt="" />
+          <TransitionWrapper1 index={7}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-2.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
-        </diLink>
-        <Link href="singleitem" 
+          </TransitionWrapper1>
+        </Link>
+        <Link
+          href="singleitem"
           className={`${liveStyles.live_card_area} ${
             btnText4 === "all"
               ? "block"
@@ -1061,103 +1086,106 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 1000 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={8}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${liveStyles.live_card_area} ${
             btnText1 === "all"
               ? "block"
@@ -1172,106 +1200,109 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 500 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-3.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
-                </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>{" "}
-              Available in stock 4
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={9}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-3.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
                   </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>{" "}
+                Available in stock 4
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>Price:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>Price:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faCartShopping} />
+                Buy Now
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faCartShopping} />
-              Buy Now
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
         {/* 1 */}
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 1 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1288,105 +1319,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 600 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-4.jpg" alt="" />
+          <TransitionWrapper1 index={10}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-4.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 1 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1403,105 +1437,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 800 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-3.jpg" alt="" />
+          <TransitionWrapper1 index={11}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-3.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 1 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1518,104 +1555,107 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 1000 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={13}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
         {/* 2 */}
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 2 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1632,105 +1672,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 600 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
+          <TransitionWrapper1 index={14}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 2 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1747,105 +1790,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 800 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-3.jpg" alt="" />
+          <TransitionWrapper1 index={15}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-3.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 2 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1862,104 +1908,107 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 1000 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-4.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={16}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-4.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
         {/* 3 */}
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 3 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -1976,105 +2025,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 600 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-2.jpg" alt="" />
+          <TransitionWrapper1 index={17}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-2.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 3 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2091,105 +2143,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 800 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-3.jpg" alt="" />
+          <TransitionWrapper1 index={18}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-3.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 3 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2206,104 +2261,107 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 1000 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-4.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-4.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
         {/* 4 */}
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 4 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2320,105 +2378,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 600 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-2.jpg" alt="" />
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-2.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 4 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2435,105 +2496,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 800 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-4.jpg" alt="" />
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-4.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 4 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2550,104 +2614,107 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 1000 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
         {/* 5 */}
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 5 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2664,105 +2731,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 600 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 5 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2779,105 +2849,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 800 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-3.jpg" alt="" />
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-3.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 5 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -2894,104 +2967,107 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 1000 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-4.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-4.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
         {/* 6 */}
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 6 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3008,105 +3084,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 600 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-4.jpg" alt="" />
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-4.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 6 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3123,105 +3202,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 800 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 6 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3238,104 +3320,107 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 1000 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
         {/* 7 */}
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 7 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3352,105 +3437,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 600 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-3.jpg" alt="" />
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-3.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 7 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3467,105 +3555,108 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 800 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-2.jpg" alt="" />
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-2.jpg" alt="" />
+                </div>
+                <div className={liveStyles.card_effect}>
+                  <i>
+                    <FontAwesomeIcon icon={faClock} />
+                  </i>
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
+                </div>
               </div>
-              <div className={liveStyles.card_effect}>
-                <i>
-                  <FontAwesomeIcon icon={faClock} />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
                 </i>
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
-                </div>
-              </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
-        <Link href="singleitem" 
+        <Link
+          href="singleitem"
           className={`${currentPage === 7 ? "block" : "hidden"} ${
             liveStyles.live_card_area
           } ${
@@ -3582,101 +3673,103 @@ const ExploreArtworkV2 = () => {
               : "hidden"
           } ${price <= 1000 ? "block" : "hidden"}`}
         >
-          <div className={liveStyles.card_content}>
-            <div className={liveStyles.card_image_container}>
-              <div className={liveStyles.live_card_image}>
-                <img src="images/commonCard2/card-1.jpg" alt="" />
-              </div>
-              <div className={liveStyles.card_effect}>
-                <FontAwesomeIcon icon={faClock} />
-                <span>
-                  24<small>d</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  04<small>h</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  12<small>m</small>
-                </span>
-                <div className={liveStyles.vl}></div>
-                <span>
-                  02<small className={liveStyles.second}>s</small>
-                </span>
-              </div>
-            </div>
-            <p className={liveStyles.bid_text}>
-              <i className={liveStyles.up_arrow}>
-                <FontAwesomeIcon icon={faArrowUp} />
-              </i>
-              Highest bid 0.24ETH
-            </p>
-            <div className={liveStyles.live_card_title_container}>
-              <p className={liveStyles.live_card_title}>Morganitho</p>
-              <div className={liveStyles.live_card_title_icon}>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.star}>
-                    <FontAwesomeIcon icon={faStar} />
-                  </i>
+          <TransitionWrapper1 index={1}>
+            <div className={liveStyles.card_content}>
+              <div className={liveStyles.card_image_container}>
+                <div className={liveStyles.live_card_image}>
+                  <img src="images/commonCard2/card-1.jpg" alt="" />
                 </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.share}>
-                    <FontAwesomeIcon icon={faShareNodes} />
-                  </i>
-                </div>
-                <div className={liveStyles.live_card_title_icon_container}>
-                  <i className={liveStyles.love}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </i>
+                <div className={liveStyles.card_effect}>
+                  <FontAwesomeIcon icon={faClock} />
+                  <span>
+                    24<small>d</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    04<small>h</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    12<small>m</small>
+                  </span>
+                  <div className={liveStyles.vl}></div>
+                  <span>
+                    02<small className={liveStyles.second}>s</small>
+                  </span>
                 </div>
               </div>
-            </div>
-            <div className={liveStyles.profile_progress}>
-              <div className={liveStyles.left_profile}>
-                <div className={liveStyles.profile_image_group}>
-                  <div className={liveStyles.profile_image_div}>
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+              <p className={liveStyles.bid_text}>
+                <i className={liveStyles.up_arrow}>
+                  <FontAwesomeIcon icon={faArrowUp} />
+                </i>
+                Highest bid 0.24ETH
+              </p>
+              <div className={liveStyles.live_card_title_container}>
+                <p className={liveStyles.live_card_title}>Morganitho</p>
+                <div className={liveStyles.live_card_title_icon}>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.star}>
+                      <FontAwesomeIcon icon={faStar} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
-                  >
-                    <img
-                      className={liveStyles.profile_image}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.share}>
+                      <FontAwesomeIcon icon={faShareNodes} />
+                    </i>
                   </div>
-                  <div
-                    className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
-                  >
-                    <img
-                      className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
-                      src="images/profile/profile-2.jpg"
-                      alt=""
-                    />
-                    <small>+</small>
+                  <div className={liveStyles.live_card_title_icon_container}>
+                    <i className={liveStyles.love}>
+                      <FontAwesomeIcon icon={faHeart} />
+                    </i>
                   </div>
                 </div>
-                <small className={liveStyles.bids}>12+Bids</small>
               </div>
-              <div className={liveStyles.right_profile}>
-                <div className={liveStyles.guary_div}>
-                  <img src="images/vectors&icon/watch.png" alt="" />
+              <div className={liveStyles.profile_progress}>
+                <div className={liveStyles.left_profile}>
+                  <div className={liveStyles.profile_image_group}>
+                    <div className={liveStyles.profile_image_div}>
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_image_div} ${liveStyles.profile_image_div_1}`}
+                    >
+                      <img
+                        className={liveStyles.profile_image}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      className={`${liveStyles.profile_plus_div} ${liveStyles.profile_image_div_2}`}
+                    >
+                      <img
+                        className={`${liveStyles.profile_image_opacity} ${liveStyles.profile_image_three}`}
+                        src="images/profile/profile-2.jpg"
+                        alt=""
+                      />
+                      <small>+</small>
+                    </div>
+                  </div>
+                  <small className={liveStyles.bids}>12+Bids</small>
                 </div>
-                <small className={liveStyles.new_bid}>New Bid:</small>
-                <small className={liveStyles.ETH}>0.16ETH</small>
+                <div className={liveStyles.right_profile}>
+                  <div className={liveStyles.guary_div}>
+                    <img src="images/vectors&icon/watch.png" alt="" />
+                  </div>
+                  <small className={liveStyles.new_bid}>New Bid:</small>
+                  <small className={liveStyles.ETH}>0.16ETH</small>
+                </div>
               </div>
+              <button className={liveStyles.card_btn}>
+                <FontAwesomeIcon icon={faHammer} />
+                Place Bid
+              </button>
             </div>
-            <button className={liveStyles.card_btn}>
-              <FontAwesomeIcon icon={faHammer} />
-              Place Bid
-            </button>
-          </div>
+          </TransitionWrapper1>
         </Link>
       </div>
       <PaginationBtn

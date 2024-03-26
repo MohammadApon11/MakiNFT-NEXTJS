@@ -2,6 +2,8 @@ import React from "react";
 import signupStyles from "../../styles/signup/signup.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import RightLeft from "@/components/framer-motion/RightLeft";
+import { TransitionWrapper1 } from "@/components/framer-motion/TransitionWrapper";
 
 const SignUp = () => {
   return (
@@ -14,10 +16,12 @@ const SignUp = () => {
       </div>
       <div className={signupStyles.fb_google_btn}>
         <button className={signupStyles.social_btn}>
-          <FontAwesomeIcon id={signupStyles.google_btn}  icon={faGoogle} /> Google
+          <FontAwesomeIcon id={signupStyles.google_btn} icon={faGoogle} />{" "}
+          Google
         </button>
         <button className={signupStyles.social_btn}>
-          <FontAwesomeIcon id={signupStyles.fb_btn} icon={faFacebookF} /> Facebook
+          <FontAwesomeIcon id={signupStyles.fb_btn} icon={faFacebookF} />{" "}
+          Facebook
         </button>
       </div>
       <div className={signupStyles.with_social}>
@@ -27,27 +31,33 @@ const SignUp = () => {
       </div>
       <form className={signupStyles.nft_input_form}>
         <div className={signupStyles.nft_input_group}>
-          <input
-            className={signupStyles.input_field}
-            type="text"
-            name=""
-            id=""
-            placeholder="Full Name"
-          />
-          <input
-            className={signupStyles.input_field}
-            type="email"
-            name=""
-            id=""
-            placeholder="Email Address"
-          />
-          <input
-            className={signupStyles.input_field}
-            type="password"
-            name=""
-            id=""
-            placeholder="Password"
-          />
+          <RightLeft side={"-120%"} duration={0.5}>
+            <input
+              className={signupStyles.input_field}
+              type="text"
+              name=""
+              id=""
+              placeholder="Full Name"
+            />
+          </RightLeft>
+          <RightLeft side={"120%"} duration={0.5}>
+            <input
+              className={signupStyles.input_field}
+              type="email"
+              name=""
+              id=""
+              placeholder="Email Address"
+            />
+          </RightLeft>
+          <RightLeft side={"-120%"} duration={0.5}>
+            <input
+              className={signupStyles.input_field}
+              type="password"
+              name=""
+              id=""
+              placeholder="Password"
+            />
+          </RightLeft>
         </div>
         <div className={signupStyles.checkbox_forget}>
           <div>
@@ -61,7 +71,11 @@ const SignUp = () => {
           </div>
           <p>Forget Password ?</p>
         </div>
-        <input className={signupStyles.submit_btn} type="submit" value="Signup" />
+        <input
+          className={signupStyles.submit_btn}
+          type="submit"
+          value="Signup"
+        />
       </form>
     </section>
   );
